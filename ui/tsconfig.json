@@ -37,10 +37,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": [
-        "./src/*"
+        "src/*"
       ],
       "@api/*": [
-        "./openapi"
+        "openapi/*"
       ]
     },
     "allowSyntheticDefaultImports": true,

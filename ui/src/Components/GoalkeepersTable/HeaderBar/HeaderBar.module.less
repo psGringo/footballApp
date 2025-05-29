@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2b2c31;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #3a3b44;
+  margin-bottom: 3rem;
+  //height: 55px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .logo {
+    width: 64px;
+    height: 64px;
+  }
+
+  .title {
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.menu {
+  display: flex;
+  border: 1px solid #ff9900;
+  border-radius: 8px;
+  padding: 0.4rem 2.2rem;
+  gap: 1.8rem;
+  height: 3.9rem;
+
+  align-content: center;
+  align-items: center;
+
+  span {
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Rajdhani', sans-serif;
+    cursor: pointer;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #ff9900;
+    }
+  }
+
+  .active {
+    color: #ff9900;
+  }
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .badge {
+    height: 100px;
+    width: 90px;
+  }
+
+  .ball {
+    width: 20px;
+    height: 20px;
+  }
+}

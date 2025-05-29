@@ -1,6 +1,5 @@
-// import React from 'react';
 import {Form, Grid, Image, Segment} from 'semantic-ui-react';
-import logo from '../../../assets/Logo.png';
+import logo from '@/assets/Logo.png';
 import styles from './LoginForm.module.less';
 
 export const LoginForm = () => {

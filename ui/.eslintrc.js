@@ -51,6 +51,8 @@ module.exports = {
     plugins: ['react', 'lodash', '@typescript-eslint', 'testing-library', 'jest-dom', 'jsx-a11y'],
 
     rules: {
+        'react/react-in-jsx-scope': 'off',
+
         // убираем ругань на CRLF под виндой
         'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
 
@@ -60,7 +62,8 @@ module.exports = {
         // Отключаем правила для пустого конструктора
         'no-useless-constructor': 'off',
 
-        // Правила на пустые функции, они необходимы для задания начального значения в контексте, что бы не использовать null
+        // Правила на пустые функции, они необходимы для задания начального значения в контексте,
+        // что бы не использовать null
         'lodash/prefer-noop': 'off',
         'no-empty-function': 'off',
         '@typescript-eslint/no-empty-function': 'off',

@@ -99,6 +99,6 @@
     "stylelint-config-standard": "^34.0.0",
     "ts-loader": "9.5.0",
     "ts-node": "^10.9.1",
-    "vite": "^6.3.5",
+    "vite": "^6.3.5"
   }
 }
