@@ -50,7 +50,7 @@ $.fn.progress = function(parameters) {
           ? $.extend(true, {}, $.fn.progress.settings, parameters)
           : $.extend({}, $.fn.progress.settings),
 
-        className       = settings.className,
+        classnameName       = settings.classnameName,
         metadata        = settings.metadata,
         namespace       = settings.namespace,
         selector        = settings.selector,
@@ -345,16 +345,16 @@ $.fn.progress = function(parameters) {
             return module.is.success() || module.is.warning() || module.is.error();
           },
           success: function() {
-            return $module.hasClass(className.success);
+            return $module.hasclassname(classnameName.success);
           },
           warning: function() {
-            return $module.hasClass(className.warning);
+            return $module.hasclassname(classnameName.warning);
           },
           error: function() {
-            return $module.hasClass(className.error);
+            return $module.hasclassname(classnameName.error);
           },
           active: function() {
-            return $module.hasClass(className.active);
+            return $module.hasclassname(classnameName.active);
           },
           visible: function() {
             return $module.is(':visible');
@@ -381,19 +381,19 @@ $.fn.progress = function(parameters) {
           },
           active: function() {
             module.verbose('Removing active state');
-            $module.removeClass(className.active);
+            $module.removeclassname(classnameName.active);
           },
           success: function() {
             module.verbose('Removing success state');
-            $module.removeClass(className.success);
+            $module.removeclassname(classnameName.success);
           },
           warning: function() {
             module.verbose('Removing warning state');
-            $module.removeClass(className.warning);
+            $module.removeclassname(classnameName.warning);
           },
           error: function() {
             module.verbose('Removing error state');
-            $module.removeClass(className.error);
+            $module.removeclassname(classnameName.error);
           }
         },
 
@@ -535,7 +535,7 @@ $.fn.progress = function(parameters) {
             text = text || settings.text.active;
             module.debug('Setting active state');
             if(settings.showActivity && !module.is.active() ) {
-              $module.addClass(className.active);
+              $module.addclassname(classnameName.active);
             }
             module.remove.warning();
             module.remove.error();
@@ -551,7 +551,7 @@ $.fn.progress = function(parameters) {
           success : function(text) {
             text = text || settings.text.success || settings.text.active;
             module.debug('Setting success state');
-            $module.addClass(className.success);
+            $module.addclassname(classnameName.success);
             module.remove.active();
             module.remove.warning();
             module.remove.error();
@@ -571,7 +571,7 @@ $.fn.progress = function(parameters) {
           warning : function(text) {
             text = text || settings.text.warning;
             module.debug('Setting warning state');
-            $module.addClass(className.warning);
+            $module.addclassname(classnameName.warning);
             module.remove.active();
             module.remove.success();
             module.remove.error();
@@ -587,7 +587,7 @@ $.fn.progress = function(parameters) {
           error : function(text) {
             text = text || settings.text.error;
             module.debug('Setting error state');
-            $module.addClass(className.error);
+            $module.addclassname(classnameName.error);
             module.remove.active();
             module.remove.success();
             module.remove.warning();
@@ -918,7 +918,7 @@ $.fn.progress.settings = {
     ratio   : '{value} of {total}'
   },
 
-  className : {
+  classnameName : {
     active  : 'active',
     error   : 'error',
     success : 'success',

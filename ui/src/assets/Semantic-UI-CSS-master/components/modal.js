@@ -52,7 +52,7 @@ $.fn.modal = function(parameters) {
           : $.extend({}, $.fn.modal.settings),
 
         selector        = settings.selector,
-        className       = settings.className,
+        classnameName       = settings.classnameName,
         namespace       = settings.namespace,
         error           = settings.error,
 
@@ -468,7 +468,7 @@ $.fn.modal = function(parameters) {
 
         hideAll: function(callback) {
           var
-            $visibleModals = $allModals.filter('.' + className.active + ', .' + className.animating)
+            $visibleModals = $allModals.filter('.' + classnameName.active + ', .' + classnameName.animating)
           ;
           callback = $.isFunction(callback)
             ? callback
@@ -485,7 +485,7 @@ $.fn.modal = function(parameters) {
 
         hideOthers: function(callback) {
           var
-            $visibleModals = $otherModals.filter('.' + className.active + ', .' + className.animating)
+            $visibleModals = $otherModals.filter('.' + classnameName.active + ', .' + classnameName.animating)
           ;
           callback = $.isFunction(callback)
             ? callback
@@ -501,10 +501,10 @@ $.fn.modal = function(parameters) {
 
         others: {
           active: function() {
-            return ($otherModals.filter('.' + className.active).length > 0);
+            return ($otherModals.filter('.' + classnameName.active).length > 0);
           },
           animating: function() {
-            return ($otherModals.filter('.' + className.animating).length > 0);
+            return ($otherModals.filter('.' + classnameName.animating).length > 0);
           }
         },
 
@@ -540,10 +540,10 @@ $.fn.modal = function(parameters) {
 
         remove: {
           active: function() {
-            $module.removeClass(className.active);
+            $module.removeclassname(classnameName.active);
           },
           legacy: function() {
-            $module.removeClass(className.legacy);
+            $module.removeclassname(classnameName.legacy);
           },
           clickaway: function() {
             $dimmer
@@ -551,8 +551,8 @@ $.fn.modal = function(parameters) {
             ;
           },
           dimmerStyles: function() {
-            $dimmer.removeClass(className.inverted);
-            $dimmable.removeClass(className.blurring);
+            $dimmer.removeclassname(classnameName.inverted);
+            $dimmable.removeclassname(classnameName.blurring);
           },
           bodyStyle: function() {
             if($body.attr('style') === '') {
@@ -573,13 +573,13 @@ $.fn.modal = function(parameters) {
             ;
           },
           scrolling: function() {
-            $dimmable.removeClass(className.scrolling);
-            $module.removeClass(className.scrolling);
+            $dimmable.removeclassname(classnameName.scrolling);
+            $module.removeclassname(classnameName.scrolling);
           }
         },
 
         cacheSizes: function() {
-          $module.addClass(className.loading);
+          $module.addclassname(classnameName.loading);
           var
             scrollHeight = $module.prop('scrollHeight'),
             modalWidth   = $module.outerWidth(),
@@ -597,7 +597,7 @@ $.fn.modal = function(parameters) {
             };
             module.cache.topOffset = -(module.cache.height / 2);
           }
-          $module.removeClass(className.loading);
+          $module.removeclassname(classnameName.loading);
           module.debug('Caching modal and container sizes', module.cache);
         },
 
@@ -627,7 +627,7 @@ $.fn.modal = function(parameters) {
 
         is: {
           active: function() {
-            return $module.hasClass(className.active);
+            return $module.hasclassname(classnameName.active);
           },
           ie: function() {
             var
@@ -643,7 +643,7 @@ $.fn.modal = function(parameters) {
             ;
           },
           scrolling: function() {
-            return $dimmable.hasClass(className.scrolling);
+            return $dimmable.hasclassname(classnameName.scrolling);
           },
           modernBrowser: function() {
             // appName for IE11 reports 'Netscape' can no longer use
@@ -700,7 +700,7 @@ $.fn.modal = function(parameters) {
           },
           dimmerStyles: function() {
             if(settings.inverted) {
-              $dimmer.addClass(className.inverted);
+              $dimmer.addclassname(classnameName.inverted);
             }
             else {
               $dimmer.removeClass(className.inverted);

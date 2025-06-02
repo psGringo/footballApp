@@ -176,11 +176,11 @@ img.ui.bordered.image {
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
-.ui[class*="left spaced"].image {
+.ui[classname*="left spaced"].image {
   margin-left: 0.5em;
   margin-right: 0em;
 }
-.ui[class*="right spaced"].image {
+.ui[classname*="right spaced"].image {
   margin-left: 0em;
   margin-right: 0.5em;
 }

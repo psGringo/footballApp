@@ -17,22 +17,22 @@ const goalkeepers = [
 
 export const GoalkeeperTable = () => {
     return (
-        <div className={styles.container}>
-            <div className={styles.column}>
+        <div classnameName={styles.container}>
+            <div classnameName={styles.column}>
                 <HeaderBar/>
 
 
-                <div className={styles.wrapper}>
-                    <div className={styles.actionsRow}>
-                        <Button className={styles.addBtn} labelPosition="left" icon>
+                <div classnameName={styles.wrapper}>
+                    <div classnameName={styles.actionsRow}>
+                        <Button classnameName={styles.addBtn} labelPosition="left" icon>
                             <Icon name="plus"/> Add goalkeeper
                         </Button>
-                        <Button className={styles.pdfBtn} basic icon>
+                        <Button classnameName={styles.pdfBtn} basic icon>
                             <Icon name="download"/> PDF
                         </Button>
                     </div>
 
-                    <Table className={styles.table} celled inverted>
+                    <Table classnameName={styles.table} celled inverted>
                         <Table.Header>
                             <Table.Row>
                                 <Table.HeaderCell>Name</Table.HeaderCell>
@@ -51,7 +51,7 @@ export const GoalkeeperTable = () => {
                                     <Table.Cell>{gk.team}</Table.Cell>
                                     <Table.Cell>{gk.season}</Table.Cell>
                                     <Table.Cell textAlign="center">
-                                        <Icon className={styles.editIcon} name="edit outline" link/>
+                                        <Icon classnameName={styles.editIcon} name="edit outline" link/>
                                     </Table.Cell>
                                 </Table.Row>
                             ))}

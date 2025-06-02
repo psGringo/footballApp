@@ -1,12 +1,12 @@
 declare module '*.less' {
-    const classes: { [key: string]: string };
-    export default classes;
-    // interface IClassName {
-    //     [className: string]: string;
+    const classnamees: { [key: string]: string };
+    export default classnamees;
+    // interface IclassnameName {
+    //     [classnameName: string]: string;
     // }
     //
-    // const classNames: IClassName;
-    // export = classNames;
+    // const classnameNames: IclassnameName;
+    // export = classnameNames;
 }
 
 declare module '*.png' {
@@ -40,6 +40,6 @@ declare module '*.webp' {
 }
 
 declare module '*.module.less' {
-    const classes: { [key: string]: string };
-    export default classes;
+    const classnamees: { [key: string]: string };
+    export default classnamees;
 }

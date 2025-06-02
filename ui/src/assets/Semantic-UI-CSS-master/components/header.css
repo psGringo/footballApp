@@ -586,12 +586,12 @@ a.ui.inverted.grey.header:hover {
 --------------------*/
 
 .ui.floated.header,
-.ui[class*="left floated"].header {
+.ui[classname*="left floated"].header {
   float: left;
   margin-top: 0em;
   margin-right: 0.5em;
 }
-.ui[class*="right floated"].header {
+.ui[classname*="right floated"].header {
   float: right;
   margin-top: 0em;
   margin-left: 0.5em;

@@ -35,7 +35,7 @@
   margin-left: -1.5rem;
   margin-right: -1.5rem;
 }
-.ui[class*="very relaxed"].grid {
+.ui[classname*="very relaxed"].grid {
   margin-left: -2.5rem;
   margin-right: -2.5rem;
 }
@@ -208,68 +208,68 @@
 }
 
 /* Grid Based */
-.ui[class*="one column"].grid > .row > .column,
-.ui[class*="one column"].grid > .column:not(.row) {
+.ui[classname*="one column"].grid > .row > .column,
+.ui[classname*="one column"].grid > .column:not(.row) {
   width: 100%;
 }
-.ui[class*="two column"].grid > .row > .column,
-.ui[class*="two column"].grid > .column:not(.row) {
+.ui[classname*="two column"].grid > .row > .column,
+.ui[classname*="two column"].grid > .column:not(.row) {
   width: 50%;
 }
-.ui[class*="three column"].grid > .row > .column,
-.ui[class*="three column"].grid > .column:not(.row) {
+.ui[classname*="three column"].grid > .row > .column,
+.ui[classname*="three column"].grid > .column:not(.row) {
   width: 33.33333333%;
 }
-.ui[class*="four column"].grid > .row > .column,
-.ui[class*="four column"].grid > .column:not(.row) {
+.ui[classname*="four column"].grid > .row > .column,
+.ui[classname*="four column"].grid > .column:not(.row) {
   width: 25%;
 }
-.ui[class*="five column"].grid > .row > .column,
-.ui[class*="five column"].grid > .column:not(.row) {
+.ui[classname*="five column"].grid > .row > .column,
+.ui[classname*="five column"].grid > .column:not(.row) {
   width: 20%;
 }
-.ui[class*="six column"].grid > .row > .column,
-.ui[class*="six column"].grid > .column:not(.row) {
+.ui[classname*="six column"].grid > .row > .column,
+.ui[classname*="six column"].grid > .column:not(.row) {
   width: 16.66666667%;
 }
-.ui[class*="seven column"].grid > .row > .column,
-.ui[class*="seven column"].grid > .column:not(.row) {
+.ui[classname*="seven column"].grid > .row > .column,
+.ui[classname*="seven column"].grid > .column:not(.row) {
   width: 14.28571429%;
 }
-.ui[class*="eight column"].grid > .row > .column,
-.ui[class*="eight column"].grid > .column:not(.row) {
+.ui[classname*="eight column"].grid > .row > .column,
+.ui[classname*="eight column"].grid > .column:not(.row) {
   width: 12.5%;
 }
-.ui[class*="nine column"].grid > .row > .column,
-.ui[class*="nine column"].grid > .column:not(.row) {
+.ui[classname*="nine column"].grid > .row > .column,
+.ui[classname*="nine column"].grid > .column:not(.row) {
   width: 11.11111111%;
 }
-.ui[class*="ten column"].grid > .row > .column,
-.ui[class*="ten column"].grid > .column:not(.row) {
+.ui[classname*="ten column"].grid > .row > .column,
+.ui[classname*="ten column"].grid > .column:not(.row) {
   width: 10%;
 }
-.ui[class*="eleven column"].grid > .row > .column,
-.ui[class*="eleven column"].grid > .column:not(.row) {
+.ui[classname*="eleven column"].grid > .row > .column,
+.ui[classname*="eleven column"].grid > .column:not(.row) {
   width: 9.09090909%;
 }
-.ui[class*="twelve column"].grid > .row > .column,
-.ui[class*="twelve column"].grid > .column:not(.row) {
+.ui[classname*="twelve column"].grid > .row > .column,
+.ui[classname*="twelve column"].grid > .column:not(.row) {
   width: 8.33333333%;
 }
-.ui[class*="thirteen column"].grid > .row > .column,
-.ui[class*="thirteen column"].grid > .column:not(.row) {
+.ui[classname*="thirteen column"].grid > .row > .column,
+.ui[classname*="thirteen column"].grid > .column:not(.row) {
   width: 7.69230769%;
 }
-.ui[class*="fourteen column"].grid > .row > .column,
-.ui[class*="fourteen column"].grid > .column:not(.row) {
+.ui[classname*="fourteen column"].grid > .row > .column,
+.ui[classname*="fourteen column"].grid > .column:not(.row) {
   width: 7.14285714%;
 }
-.ui[class*="fifteen column"].grid > .row > .column,
-.ui[class*="fifteen column"].grid > .column:not(.row) {
+.ui[classname*="fifteen column"].grid > .row > .column,
+.ui[classname*="fifteen column"].grid > .column:not(.row) {
   width: 6.66666667%;
 }
-.ui[class*="sixteen column"].grid > .row > .column,
-.ui[class*="sixteen column"].grid > .column:not(.row) {
+.ui[classname*="sixteen column"].grid > .row > .column,
+.ui[classname*="sixteen column"].grid > .column:not(.row) {
   width: 6.25%;
 }
 

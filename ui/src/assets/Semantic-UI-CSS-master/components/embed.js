@@ -44,7 +44,7 @@ $.fn.embed = function(parameters) {
           : $.extend({}, $.fn.embed.settings),
 
         selector        = settings.selector,
-        className       = settings.className,
+        classnameName       = settings.classnameName,
         sources         = settings.sources,
         error           = settings.error,
         metadata        = settings.metadata,
@@ -138,7 +138,7 @@ $.fn.embed = function(parameters) {
           module.refresh();
           url = url || module.get.url();
           $embed = $('<div/>')
-            .addClass(className.embed)
+            .addclassname(classnameName.embed)
             .html( module.generate.embed(url) )
             .appendTo($module)
           ;
@@ -296,7 +296,7 @@ $.fn.embed = function(parameters) {
 
         set: {
           active: function() {
-            $module.addClass(className.active);
+            $module.addclassname(classnameName.active);
           }
         },
 
@@ -311,7 +311,7 @@ $.fn.embed = function(parameters) {
             ;
           },
           active: function() {
-            $module.removeClass(className.active);
+            $module.removeclassname(classnameName.active);
           },
           embed: function() {
             $embed.empty();
@@ -619,7 +619,7 @@ $.fn.embed.settings = {
     method : 'The method you called is not defined'
   },
 
-  className : {
+  classnameName : {
     active : 'active',
     embed  : 'embed'
   },
@@ -684,10 +684,10 @@ $.fn.embed.settings = {
         html = ''
       ;
       if(icon) {
-        html += '<i class="' + icon + ' icon"></i>';
+        html += '<i classname="' + icon + ' icon"></i>';
       }
       if(image) {
-        html += '<img class="placeholder" src="' + image + '">';
+        html += '<img classname="placeholder" src="' + image + '">';
       }
       return html;
     }

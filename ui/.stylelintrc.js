@@ -4,7 +4,7 @@ module.exports = {
     rules: {
         identation: 4,
         'string-quotes': 'single',
-        'selector-pseudo-class-no-unknown': [true],
+        'selector-pseudo-classname-no-unknown': [true],
         'no-descending-specificity': null,
         'property-no-unknown': true
     }

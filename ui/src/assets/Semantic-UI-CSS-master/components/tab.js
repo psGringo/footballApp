@@ -47,7 +47,7 @@ $.fn.tab = function(parameters) {
           ? $.extend(true, {}, $.fn.tab.settings, parameters)
           : $.extend({}, $.fn.tab.settings),
 
-        className       = settings.className,
+        classnameName       = settings.classnameName,
         metadata        = settings.metadata,
         selector        = settings.selector,
         error           = settings.error,
@@ -288,14 +288,14 @@ $.fn.tab = function(parameters) {
           loading: function(tabPath) {
             var
               $tab      = module.get.tabElement(tabPath),
-              isLoading = $tab.hasClass(className.loading)
+              isLoading = $tab.hasclassname(classnameName.loading)
             ;
             if(!isLoading) {
               module.verbose('Setting loading state for', $tab);
               $tab
-                .addClass(className.loading)
+                .addclassname(classnameName.loading)
                 .siblings($tabs)
-                  .removeClass(className.active + ' ' + className.loading)
+                  .removeclassname(classnameName.active + ' ' + classnameName.loading)
               ;
               if($tab.length > 0) {
                 settings.onRequest.call($tab[0], tabPath);
@@ -385,7 +385,7 @@ $.fn.tab = function(parameters) {
               // if anchor exists use parent tab
               if($anchor && $anchor.length > 0 && currentPath) {
                 module.debug('Anchor link used, opening parent tab', $tab, $anchor);
-                if( !$tab.hasClass(className.active) ) {
+                if( !$tab.hasclassname(classnameName.active) ) {
                   setTimeout(function() {
                     module.scrollTo($anchor);
                   }, 0);
@@ -546,15 +546,15 @@ $.fn.tab = function(parameters) {
               $deactiveTabs = (settings.deactivate == 'siblings')
                 ? $tab.siblings($tabs)
                 : $tabs.not($tab),
-              isActive      = $tab.hasClass(className.active)
+              isActive      = $tab.hasclassname(classnameName.active)
             ;
             module.verbose('Showing tab content for', $tab);
             if(!isActive) {
               $tab
-                .addClass(className.active)
+                .addclassname(classnameName.active)
               ;
               $deactiveTabs
-                .removeClass(className.active + ' ' + className.loading)
+                .removeclassname(classnameName.active + ' ' + classnameName.loading)
               ;
               if($tab.length > 0) {
                 settings.onVisible.call($tab[0], tabPath);
@@ -567,15 +567,15 @@ $.fn.tab = function(parameters) {
               $deactiveNavigation = (settings.deactivate == 'siblings')
                 ? $navigation.siblings($allModules)
                 : $allModules.not($navigation),
-              isActive    = $navigation.hasClass(className.active)
+              isActive    = $navigation.hasclassname(classnameName.active)
             ;
             module.verbose('Activating tab navigation for', $navigation, tabPath);
             if(!isActive) {
               $navigation
-                .addClass(className.active)
+                .addclassname(classnameName.active)
               ;
               $deactiveNavigation
-                .removeClass(className.active + ' ' + className.loading)
+                .removeclassname(classnameName.active + ' ' + classnameName.loading)
               ;
             }
           }
@@ -588,12 +588,12 @@ $.fn.tab = function(parameters) {
           },
           navigation: function() {
             $allModules
-              .removeClass(className.active)
+              .removeclassname(classnameName.active)
             ;
           },
           tabs: function() {
             $tabs
-              .removeClass(className.active + ' ' + className.loading)
+              .removeclassname(classnameName.active + ' ' + classnameName.loading)
             ;
           }
         },
@@ -937,7 +937,7 @@ $.fn.tab.settings = {
     promise: 'promise'
   },
 
-  className   : {
+  classnameName   : {
     loading : 'loading',
     active  : 'active'
   },

@@ -554,7 +554,7 @@ $.fn.form = function(parameters) {
 
         metadata,
         selector,
-        className,
+        classnameName,
         regExp,
         error,
 
@@ -673,11 +673,11 @@ $.fn.form = function(parameters) {
                 defaultValue = $field.data(metadata.defaultValue) || '',
                 isCheckbox   = $element.is(selector.uiCheckbox),
                 isDropdown   = $element.is(selector.uiDropdown),
-                isErrored    = $fieldGroup.hasClass(className.error)
+                isErrored    = $fieldGroup.hasclassname(classnameName.error)
               ;
               if(isErrored) {
                 module.verbose('Resetting error on field', $fieldGroup);
-                $fieldGroup.removeClass(className.error);
+                $fieldGroup.removeclassname(classnameName.error);
                 $prompt.remove();
               }
               if(isDropdown) {
@@ -706,14 +706,14 @@ $.fn.form = function(parameters) {
                 defaultValue = $field.data(metadata.defaultValue),
                 isCheckbox   = $element.is(selector.uiCheckbox),
                 isDropdown   = $element.is(selector.uiDropdown),
-                isErrored    = $fieldGroup.hasClass(className.error)
+                isErrored    = $fieldGroup.hasclassname(classnameName.error)
               ;
               if(defaultValue === undefined) {
                 return;
               }
               if(isErrored) {
                 module.verbose('Resetting error on field', $fieldGroup);
-                $fieldGroup.removeClass(className.error);
+                $fieldGroup.removeclassname(classnameName.error);
                 $prompt.remove();
               }
               if(isDropdown) {
@@ -850,7 +850,7 @@ $.fn.form = function(parameters) {
                 $fieldGroup     = $field.closest($group),
                 validationRules = module.get.validation($field)
               ;
-              if( $fieldGroup.hasClass(className.error) ) {
+              if( $fieldGroup.hasclassname(classnameName.error) ) {
                 module.debug('Revalidating field', $field, validationRules);
                 if(validationRules) {
                   module.validate.field( validationRules );
@@ -868,7 +868,7 @@ $.fn.form = function(parameters) {
                 $fieldGroup = $field.closest($group),
                 validationRules = module.get.validation($field)
               ;
-              if(validationRules && (settings.on == 'change' || ( $fieldGroup.hasClass(className.error) && settings.revalidate) )) {
+              if(validationRules && (settings.on == 'change' || ( $fieldGroup.hasclassname(classnameName.error) && settings.revalidate) )) {
                 clearTimeout(module.timer);
                 module.timer = setTimeout(function() {
                   module.debug('Revalidating field', $field,  module.get.validation($field));
@@ -997,7 +997,7 @@ $.fn.form = function(parameters) {
             namespace       = settings.namespace;
             metadata        = settings.metadata;
             selector        = settings.selector;
-            className       = settings.className;
+            classnameName       = settings.classnameName;
             regExp          = settings.regExp;
             error           = settings.error;
             moduleNamespace = 'module-' + namespace;
@@ -1207,7 +1207,7 @@ $.fn.form = function(parameters) {
             ;
             module.verbose('Adding field error state', identifier);
             $fieldGroup
-              .addClass(className.error)
+              .addclassname(classnameName.error)
             ;
             if(settings.inline) {
               if(!promptExists) {
@@ -1298,7 +1298,7 @@ $.fn.form = function(parameters) {
               $prompt     = $fieldGroup.children(selector.prompt)
             ;
             $fieldGroup
-              .removeClass(className.error)
+              .removeclassname(classnameName.error)
             ;
             if(settings.inline && $prompt.is(':visible')) {
               module.verbose('Removing prompt for field', identifier);
@@ -1321,8 +1321,8 @@ $.fn.form = function(parameters) {
         set: {
           success: function() {
             $module
-              .removeClass(className.error)
-              .addClass(className.success)
+              .removeclassname(classnameName.error)
+              .addclassname(classnameName.success)
             ;
           },
           defaults: function () {
@@ -1341,8 +1341,8 @@ $.fn.form = function(parameters) {
           },
           error: function() {
             $module
-              .removeClass(className.success)
-              .addClass(className.error)
+              .removeclassname(classnameName.success)
+              .addclassname(className.error)
             ;
           },
           value: function (field, value) {

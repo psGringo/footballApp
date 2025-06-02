@@ -4,7 +4,7 @@ interface IGreetingsApiService {
     sayHello(): CancelablePromise<Greeting | Error>;
 }
 
-export const GreetingsApiService: IGreetingsApiService = class GreetingsApiService {
+export const GreetingsApiService: IGreetingsApiService = classname GreetingsApiService {
 
     public static sayHello(): CancelablePromise<Greeting | Error> {
         return new CancelablePromise<Greeting | Error>((resolve) => {

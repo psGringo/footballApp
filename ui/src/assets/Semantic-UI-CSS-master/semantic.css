@@ -1193,24 +1193,24 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 
 /* Right */
 
-.ui.labeled.button:not([class*="left labeled"]) > .button {
+.ui.labeled.button:not([classname*="left labeled"]) > .button {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
 
-.ui.labeled.button:not([class*="left labeled"]) > .label {
+.ui.labeled.button:not([classname*="left labeled"]) > .label {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
 /* Left Side */
 
-.ui[class*="left labeled"].button > .button {
+.ui[classname*="left labeled"].button > .button {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
-.ui[class*="left labeled"].button > .label {
+.ui[classname*="left labeled"].button > .label {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
@@ -1419,15 +1419,15 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
        Floated
 --------------------*/
 
-.ui[class*="left floated"].buttons,
-.ui[class*="left floated"].button {
+.ui[classname*="left floated"].buttons,
+.ui[classname*="left floated"].button {
   float: left;
   margin-left: 0em;
   margin-right: 0.25em;
 }
 
-.ui[class*="right floated"].buttons,
-.ui[class*="right floated"].button {
+.ui[classname*="right floated"].buttons,
+.ui[classname*="right floated"].button {
   float: right;
   margin-right: 0em;
   margin-left: 0.25em;
@@ -1693,12 +1693,12 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 
 /* Right Labeled */
 
-.ui[class*="right labeled"].icon.button {
+.ui[classname*="right labeled"].icon.button {
   padding-right: 4.07142857em !important;
   padding-left: 1.5em !important;
 }
 
-.ui[class*="right labeled"].icon.button > .icon {
+.ui[classname*="right labeled"].icon.button > .icon {
   left: auto;
   right: 0em;
   border-radius: 0px;
@@ -1777,8 +1777,8 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 
 /* Fluid Labeled */
 
-.ui.fluid[class*="left labeled"].icon.button,
-.ui.fluid[class*="right labeled"].icon.button {
+.ui.fluid[classname*="left labeled"].icon.button,
+.ui.fluid[classname*="right labeled"].icon.button {
   padding-left: 1.5em !important;
   padding-right: 1.5em !important;
 }
@@ -1929,64 +1929,64 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 
 /* Top / Bottom */
 
-.ui[class*="top attached"].buttons {
+.ui[classname*="top attached"].buttons {
   margin-bottom: -1px;
   border-radius: 0.28571429rem 0.28571429rem 0em 0em;
 }
 
-.ui[class*="top attached"].buttons .button:first-child {
+.ui[classname*="top attached"].buttons .button:first-child {
   border-radius: 0.28571429rem 0em 0em 0em;
 }
 
-.ui[class*="top attached"].buttons .button:last-child {
+.ui[classname*="top attached"].buttons .button:last-child {
   border-radius: 0em 0.28571429rem 0em 0em;
 }
 
-.ui[class*="bottom attached"].buttons {
+.ui[classname*="bottom attached"].buttons {
   margin-top: -1px;
   border-radius: 0em 0em 0.28571429rem 0.28571429rem;
 }
 
-.ui[class*="bottom attached"].buttons .button:first-child {
+.ui[classname*="bottom attached"].buttons .button:first-child {
   border-radius: 0em 0em 0em 0.28571429rem;
 }
 
-.ui[class*="bottom attached"].buttons .button:last-child {
+.ui[classname*="bottom attached"].buttons .button:last-child {
   border-radius: 0em 0em 0.28571429rem 0em;
 }
 
 /* Left / Right */
 
-.ui[class*="left attached"].buttons {
+.ui[classname*="left attached"].buttons {
   display: inline-flex;
   margin-right: 0em;
   margin-left: -1px;
   border-radius: 0em 0.28571429rem 0.28571429rem 0em;
 }
 
-.ui[class*="left attached"].buttons .button:first-child {
+.ui[classname*="left attached"].buttons .button:first-child {
   margin-left: -1px;
   border-radius: 0em 0.28571429rem 0em 0em;
 }
 
-.ui[class*="left attached"].buttons .button:last-child {
+.ui[classname*="left attached"].buttons .button:last-child {
   margin-left: -1px;
   border-radius: 0em 0em 0.28571429rem 0em;
 }
 
-.ui[class*="right attached"].buttons {
+.ui[classname*="right attached"].buttons {
   display: inline-flex;
   margin-left: 0em;
   margin-right: -1px;
   border-radius: 0.28571429rem 0em 0em 0.28571429rem;
 }
 
-.ui[class*="right attached"].buttons .button:first-child {
+.ui[classname*="right attached"].buttons .button:first-child {
   margin-left: -1px;
   border-radius: 0.28571429rem 0em 0em 0em;
 }
 
-.ui[class*="right attached"].buttons .button:last-child {
+.ui[classname*="right attached"].buttons .button:last-child {
   margin-left: -1px;
   border-radius: 0em 0em 0em 0.28571429rem;
 }
@@ -4985,7 +4985,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
            Variations
 *******************************/
 
-.ui[class*="left aligned"].container {
+.ui[classname*="left aligned"].container {
   text-align: left;
 }
 

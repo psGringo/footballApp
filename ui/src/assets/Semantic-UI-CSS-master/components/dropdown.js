@@ -43,7 +43,7 @@ $.fn.dropdown = function(parameters) {
           ? $.extend(true, {}, $.fn.dropdown.settings, parameters)
           : $.extend({}, $.fn.dropdown.settings),
 
-        className       = settings.className,
+        classnameName       = settings.classnameName,
         message         = settings.message,
         fields          = settings.fields,
         keys            = settings.keys,
@@ -212,11 +212,11 @@ $.fn.dropdown = function(parameters) {
                   .html(html)
                   .attr('data-' + metadata.value, value)
                   .attr('data-' + metadata.text, value)
-                  .addClass(className.addition)
-                  .addClass(className.item)
+                  .addclassname(classnameName.addition)
+                  .addclassname(classnameName.item)
                 ;
                 if(settings.hideAdditions) {
-                  $userChoice.addClass(className.hidden);
+                  $userChoice.addclassname(classnameName.hidden);
                 }
                 $userChoices = ($userChoices === undefined)
                   ? $userChoice
@@ -241,13 +241,13 @@ $.fn.dropdown = function(parameters) {
           },
           menu: function() {
             $menu = $('<div />')
-              .addClass(className.menu)
+              .addclassname(classnameName.menu)
               .appendTo($module)
             ;
           },
           sizer: function() {
             $sizer = $('<span />')
-              .addClass(className.sizer)
+              .addclassname(classnameName.sizer)
               .insertAfter($search)
             ;
           }
@@ -275,7 +275,7 @@ $.fn.dropdown = function(parameters) {
               .not(selector.unselectable)
               .not(selector.addition + selector.hidden)
                 .eq(0)
-                .addClass(className.selected)
+                .addclassname(classnameName.selected)
             ;
           },
           nextAvailable: function($selected) {
@@ -287,11 +287,11 @@ $.fn.dropdown = function(parameters) {
             ;
             if(hasNext) {
               module.verbose('Moving selection to', $nextAvailable);
-              $nextAvailable.addClass(className.selected);
+              $nextAvailable.addclassname(classnameName.selected);
             }
             else {
               module.verbose('Moving selection to', $prevAvailable);
-              $prevAvailable.addClass(className.selected);
+              $prevAvailable.addclassname(classnameName.selected);
             }
           }
         },
@@ -324,7 +324,7 @@ $.fn.dropdown = function(parameters) {
             if( module.is.search() && !module.has.search() ) {
               module.verbose('Adding search input');
               $search = $('<input />')
-                .addClass(className.search)
+                .addclassname(classnameName.search)
                 .prop('autocomplete', 'off')
                 .insertBefore($text)
               ;
@@ -357,13 +357,13 @@ $.fn.dropdown = function(parameters) {
             else {
               module.debug('Creating entire dropdown from select');
               $module = $('<div />')
-                .attr('class', $input.attr('class') )
-                .addClass(className.selection)
-                .addClass(className.dropdown)
+                .attr('classname', $input.attr('classname') )
+                .addclassname(classnameName.selection)
+                .addclassname(classnameName.dropdown)
                 .html( templates.dropdown(selectValues) )
                 .insertBefore($input)
               ;
-              if($input.hasClass(className.multiple) && $input.prop('multiple') === false) {
+              if($input.hasclassname(classnameName.multiple) && $input.prop('multiple') === false) {
                 module.error(error.missingMultiple);
                 $input.prop('multiple', true);
               }
@@ -372,10 +372,10 @@ $.fn.dropdown = function(parameters) {
               }
               if ($input.prop('disabled')) {
                 module.debug('Disabling dropdown');
-                $module.addClass(className.disabled);
+                $module.addclassname(classnameName.disabled);
               }
               $input
-                .removeAttr('class')
+                .removeAttr('classname')
                 .detach()
                 .prependTo($module)
               ;
@@ -511,7 +511,7 @@ $.fn.dropdown = function(parameters) {
           module.verbose('Finding other dropdowns to hide');
           $allModules
             .not($module)
-              .has(selector.menu + '.' + className.visible)
+              .has(selector.menu + '.' + classnameName.visible)
                 .dropdown('hide')
           ;
         },
@@ -840,7 +840,7 @@ $.fn.dropdown = function(parameters) {
           if(results) {
             $item
               .not(results)
-              .addClass(className.filtered)
+              .addclassname(classnameName.filtered)
             ;
           }
         },
@@ -881,8 +881,8 @@ $.fn.dropdown = function(parameters) {
         },
         filterActive: function() {
           if(settings.useLabels) {
-            $item.filter('.' + className.active)
-              .addClass(className.filtered)
+            $item.filter('.' + classnameName.active)
+              .addclassname(className.filtered)
             ;
           }
         },

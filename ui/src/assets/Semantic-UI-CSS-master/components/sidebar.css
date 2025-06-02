@@ -245,8 +245,8 @@ body.pushable > .pusher {
 .ui.thin.right.sidebar {
   width: 150px;
 }
-.ui[class*="very thin"].left.sidebar,
-.ui[class*="very thin"].right.sidebar {
+.ui[classname*="very thin"].left.sidebar,
+.ui[classname*="very thin"].right.sidebar {
   width: 60px;
 }
 .ui.left.sidebar,
@@ -257,8 +257,8 @@ body.pushable > .pusher {
 .ui.wide.right.sidebar {
   width: 350px;
 }
-.ui[class*="very wide"].left.sidebar,
-.ui[class*="very wide"].right.sidebar {
+.ui[classname*="very wide"].left.sidebar,
+.ui[classname*="very wide"].right.sidebar {
   width: 475px;
 }
 
@@ -267,16 +267,16 @@ body.pushable > .pusher {
 .ui.visible.thin.left.sidebar ~ .pusher {
   transform: translate3d(150px, 0, 0);
 }
-.ui.visible[class*="very thin"].left.sidebar ~ .fixed,
-.ui.visible[class*="very thin"].left.sidebar ~ .pusher {
+.ui.visible[classname*="very thin"].left.sidebar ~ .fixed,
+.ui.visible[classname*="very thin"].left.sidebar ~ .pusher {
   transform: translate3d(60px, 0, 0);
 }
 .ui.visible.wide.left.sidebar ~ .fixed,
 .ui.visible.wide.left.sidebar ~ .pusher {
   transform: translate3d(350px, 0, 0);
 }
-.ui.visible[class*="very wide"].left.sidebar ~ .fixed,
-.ui.visible[class*="very wide"].left.sidebar ~ .pusher {
+.ui.visible[classname*="very wide"].left.sidebar ~ .fixed,
+.ui.visible[classname*="very wide"].left.sidebar ~ .pusher {
   transform: translate3d(475px, 0, 0);
 }
 
@@ -285,16 +285,16 @@ body.pushable > .pusher {
 .ui.visible.thin.right.sidebar ~ .pusher {
   transform: translate3d(-150px, 0, 0);
 }
-.ui.visible[class*="very thin"].right.sidebar ~ .fixed,
-.ui.visible[class*="very thin"].right.sidebar ~ .pusher {
+.ui.visible[classname*="very thin"].right.sidebar ~ .fixed,
+.ui.visible[classname*="very thin"].right.sidebar ~ .pusher {
   transform: translate3d(-60px, 0, 0);
 }
 .ui.visible.wide.right.sidebar ~ .fixed,
 .ui.visible.wide.right.sidebar ~ .pusher {
   transform: translate3d(-350px, 0, 0);
 }
-.ui.visible[class*="very wide"].right.sidebar ~ .fixed,
-.ui.visible[class*="very wide"].right.sidebar ~ .pusher {
+.ui.visible[classname*="very wide"].right.sidebar ~ .fixed,
+.ui.visible[classname*="very wide"].right.sidebar ~ .pusher {
   transform: translate3d(-475px, 0, 0);
 }
 

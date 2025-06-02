@@ -150,12 +150,12 @@
 .ui.square.embed {
   padding-bottom: 100%;
 }
-.ui[class*="4:3"].embed {
+.ui[classname*="4:3"].embed {
   padding-bottom: 75%;
 }
-.ui[class*="16:9"].embed {
+.ui[classname*="16:9"].embed {
   padding-bottom: 56.25%;
 }
-.ui[class*="21:9"].embed {
+.ui[classname*="21:9"].embed {
   padding-bottom: 42.85714286%;
 }

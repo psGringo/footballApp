@@ -46,7 +46,7 @@ $.fn.popup = function(parameters) {
           : $.extend({}, $.fn.popup.settings),
 
         selector           = settings.selector,
-        className          = settings.className,
+        classnameName          = settings.classnameName,
         error              = settings.error,
         metadata           = settings.metadata,
         namespace          = settings.namespace,
@@ -124,9 +124,9 @@ $.fn.popup = function(parameters) {
             }
           }
           if(settings.popup) {
-            $popup.addClass(className.loading);
+            $popup.addclassname(classnameName.loading);
             $offsetParent = module.get.offsetParent();
-            $popup.removeClass(className.loading);
+            $popup.removeclassname(classnameName.loading);
             if(settings.movePopup && module.has.popup() && module.get.offsetParent($popup)[0] !== $offsetParent[0]) {
               module.debug('Moving popup to the same offset parent as target');
               $popup
@@ -253,7 +253,7 @@ $.fn.popup = function(parameters) {
               });
             }
             $popup = $('<div/>')
-              .addClass(className.popup)
+              .addclassname(classnameName.popup)
               .data(metadata.activator, $module)
               .html(html)
             ;
@@ -360,7 +360,7 @@ $.fn.popup = function(parameters) {
 
         hideAll: function() {
           $(selector.popup)
-            .filter('.' + className.popupVisible)
+            .filter('.' + classnameName.popupVisible)
             .each(function() {
               $(this)
                 .data(metadata.activator)
@@ -890,9 +890,9 @@ $.fn.popup = function(parameters) {
             // tentatively place on stage
             $popup
               .css(positioning)
-              .removeClass(className.position)
-              .addClass(position)
-              .addClass(className.loading)
+              .removeclassname(classnameName.position)
+              .addclassname(position)
+              .addclassname(classnameName.loading)
             ;
 
             popupOffset = module.get.popupOffset();
@@ -945,28 +945,28 @@ $.fn.popup = function(parameters) {
             variation = variation || module.get.variation();
             if(variation && module.has.popup() ) {
               module.verbose('Adding variation to popup', variation);
-              $popup.addClass(variation);
+              $popup.addclassname(variation);
             }
           },
 
           visible: function() {
-            $module.addClass(className.visible);
+            $module.addclassname(classnameName.visible);
           }
         },
 
         remove: {
           loading: function() {
-            $popup.removeClass(className.loading);
+            $popup.removeclassname(classnameName.loading);
           },
           variation: function(variation) {
             variation = variation || module.get.variation();
             if(variation) {
               module.verbose('Removing variation', variation);
-              $popup.removeClass(variation);
+              $popup.removeclassname(variation);
             }
           },
           visible: function() {
-            $module.removeClass(className.visible);
+            $module.removeclassname(classnameName.visible);
           },
           attempts: function() {
             module.verbose('Resetting all searched positions');
@@ -1108,22 +1108,22 @@ $.fn.popup = function(parameters) {
             return module.supports.svg() && (element instanceof SVGGraphicsElement);
           },
           basic: function() {
-            return $module.hasClass(className.basic);
+            return $module.hasclassname(classnameName.basic);
           },
           active: function() {
-            return $module.hasClass(className.active);
+            return $module.hasclassname(classnameName.active);
           },
           animating: function() {
-            return ($popup !== undefined && $popup.hasClass(className.animating) );
+            return ($popup !== undefined && $popup.hasclassname(classnameName.animating) );
           },
           fluid: function() {
-            return ($popup !== undefined && $popup.hasClass(className.fluid));
+            return ($popup !== undefined && $popup.hasclassname(classnameName.fluid));
           },
           visible: function() {
-            return ($popup !== undefined && $popup.hasClass(className.popupVisible));
+            return ($popup !== undefined && $popup.hasclassname(classnameName.popupVisible));
           },
           dropdown: function() {
-            return $module.hasClass(className.dropdown);
+            return $module.hasclassname(className.dropdown);
           },
           hidden: function() {
             return !module.is.visible();

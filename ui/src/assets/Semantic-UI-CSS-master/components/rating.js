@@ -40,7 +40,7 @@ $.fn.rating = function(parameters) {
           : $.extend({}, $.fn.rating.settings),
 
         namespace       = settings.namespace,
-        className       = settings.className,
+        classnameName       = settings.classnameName,
         metadata        = settings.metadata,
         selector        = settings.selector,
         error           = settings.error,
@@ -120,23 +120,23 @@ $.fn.rating = function(parameters) {
             ;
             $activeIcon
               .nextAll()
-                .removeClass(className.selected)
+                .removeclassname(classnameName.selected)
             ;
             $module
-              .addClass(className.selected)
+              .addclassname(classnameName.selected)
             ;
             $activeIcon
-              .addClass(className.selected)
+              .addclassname(classnameName.selected)
                 .prevAll()
-                .addClass(className.selected)
+                .addclassname(classnameName.selected)
             ;
           },
           mouseleave: function() {
             $module
-              .removeClass(className.selected)
+              .removeclassname(classnameName.selected)
             ;
             $icon
-              .removeClass(className.selected)
+              .removeclassname(classnameName.selected)
             ;
           },
           click: function() {
@@ -189,7 +189,7 @@ $.fn.rating = function(parameters) {
           module.debug('Setting rating to interactive mode');
           module.bind.events();
           $module
-            .removeClass(className.disabled)
+            .removeclassname(classnameName.disabled)
           ;
         },
 
@@ -197,7 +197,7 @@ $.fn.rating = function(parameters) {
           module.debug('Setting rating to read-only mode');
           module.remove.events();
           $module
-            .addClass(className.disabled)
+            .addclassname(classnameName.disabled)
           ;
         },
 
@@ -224,7 +224,7 @@ $.fn.rating = function(parameters) {
           },
           rating: function() {
             var
-              currentRating = $icon.filter('.' + className.active).length
+              currentRating = $icon.filter('.' + classnameName.active).length
             ;
             module.verbose('Current rating retrieved', currentRating);
             return currentRating;
@@ -240,18 +240,18 @@ $.fn.rating = function(parameters) {
               $activeIcon = $icon.eq(ratingIndex)
             ;
             $module
-              .removeClass(className.selected)
+              .removeclassname(classnameName.selected)
             ;
             $icon
-              .removeClass(className.selected)
-              .removeClass(className.active)
+              .removeclassname(classnameName.selected)
+              .removeclassname(classnameName.active)
             ;
             if(rating > 0) {
               module.verbose('Setting current rating to', rating);
               $activeIcon
                 .prevAll()
                 .addBack()
-                  .addClass(className.active)
+                  .addclassname(classnameName.active)
               ;
             }
             if(!module.is.initialLoad()) {
@@ -478,7 +478,7 @@ $.fn.rating.settings = {
     maxRating : 'maxRating'
   },
 
-  className : {
+  classnameName : {
     active   : 'active',
     disabled : 'disabled',
     selected : 'selected',
@@ -496,7 +496,7 @@ $.fn.rating.settings = {
         html = ''
       ;
       while(icon <= maxRating) {
-        html += '<i class="icon"></i>';
+        html += '<i classname="icon"></i>';
         icon++;
       }
       return html;

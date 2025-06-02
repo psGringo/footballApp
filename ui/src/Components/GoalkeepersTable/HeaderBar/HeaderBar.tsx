@@ -5,17 +5,17 @@ import uralLogo from '@/assets/ural-logo.svg';
 
 export const HeaderBar = () => {
     return (
-        <div className={styles.header}>
-            <div className={styles.left}>
-                <Image alt="Logo" className={styles.logo} src={logo} />
-                <div className={styles.title}>
+        <div classnameName={styles.header}>
+            <div classnameName={styles.left}>
+                <Image alt="Logo" classnameName={styles.logo} src={logo} />
+                <div classnameName={styles.title}>
                     <div>Goalkeeping</div>
                     <div>Organizer</div>
                 </div>
             </div>
 
-            <div className={styles.menu}>
-                <span className={styles.active}>Account</span>
+            <div classnameName={styles.menu}>
+                <span classnameName={styles.active}>Account</span>
                 <span>Training</span>
                 <span>Pool</span>
                 <span>Graphics</span>
@@ -23,8 +23,8 @@ export const HeaderBar = () => {
                 <span>Analysis</span>
             </div>
 
-            <div className={styles.right}>
-                <Image alt="Club badge" className={styles.badge} src={uralLogo} />
+            <div classnameName={styles.right}>
+                <Image alt="Club badge" classnameName={styles.badge} src={uralLogo} />
             </div>
         </div>
     );

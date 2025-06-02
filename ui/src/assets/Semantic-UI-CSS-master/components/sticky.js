@@ -40,7 +40,7 @@ $.fn.sticky = function(parameters) {
           ? $.extend(true, {}, $.fn.sticky.settings, parameters)
           : $.extend({}, $.fn.sticky.settings),
 
-        className             = settings.className,
+        classnameName             = settings.classnameName,
         namespace             = settings.namespace,
         error                 = settings.error,
 
@@ -240,7 +240,7 @@ $.fn.sticky = function(parameters) {
               $element = $('<div/>'),
               element = $element[0]
             ;
-            $element.addClass(className.supported);
+            $element.addclassname(classnameName.supported);
             return($element.css('position').match('sticky'));
           }
         },
@@ -461,10 +461,10 @@ $.fn.sticky = function(parameters) {
             return ($scroll[0] == window);
           },
           top: function() {
-            return $module.hasClass(className.top);
+            return $module.hasclassname(classnameName.top);
           },
           bottom: function() {
-            return $module.hasClass(className.bottom);
+            return $module.hasclassname(classnameName.bottom);
           },
           initialPosition: function() {
             return (!module.is.fixed() && !module.is.bound());
@@ -473,10 +473,10 @@ $.fn.sticky = function(parameters) {
             return (!$module.is(':visible'));
           },
           bound: function() {
-            return $module.hasClass(className.bound);
+            return $module.hasclassname(classnameName.bound);
           },
           fixed: function() {
-            return $module.hasClass(className.fixed);
+            return $module.hasclassname(classnameName.fixed);
           }
         },
 
@@ -601,10 +601,10 @@ $.fn.sticky = function(parameters) {
               top          : '',
               marginBottom : ''
             })
-            .removeClass(className.fixed)
-            .removeClass(className.bottom)
-            .addClass(className.bound)
-            .addClass(className.top)
+            .removeclassname(classnameName.fixed)
+            .removeclassname(classnameName.bottom)
+            .addclassname(classnameName.bound)
+            .addclassname(classnameName.top)
           ;
           settings.onTop.call(element);
           settings.onUnstick.call(element);
@@ -620,10 +620,10 @@ $.fn.sticky = function(parameters) {
               left         : '',
               top          : ''
             })
-            .removeClass(className.fixed)
-            .removeClass(className.top)
-            .addClass(className.bound)
-            .addClass(className.bottom)
+            .removeclassname(classnameName.fixed)
+            .removeclassname(classnameName.top)
+            .addclassname(classnameName.bound)
+            .addclassname(classnameName.bottom)
           ;
           settings.onBottom.call(element);
           settings.onUnstick.call(element);
@@ -649,10 +649,10 @@ $.fn.sticky = function(parameters) {
               bottom       : '',
               marginBottom : ''
             })
-            .removeClass(className.bound)
-            .removeClass(className.bottom)
-            .addClass(className.fixed)
-            .addClass(className.top)
+            .removeclassname(classnameName.bound)
+            .removeclassname(classnameName.bottom)
+            .addclassname(classnameName.fixed)
+            .addclassname(classnameName.top)
           ;
           settings.onStick.call(element);
         },
@@ -670,8 +670,8 @@ $.fn.sticky = function(parameters) {
               bottom       : '',
               marginBottom : ''
             })
-            .removeClass(className.bound)
-            .removeClass(className.top)
+            .removeclassname(classnameName.bound)
+            .removeclassname(className.top)
             .addClass(className.fixed)
             .addClass(className.bottom)
           ;

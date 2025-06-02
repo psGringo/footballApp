@@ -44,7 +44,7 @@ $.fn.state = function(parameters) {
 
         error           = settings.error,
         metadata        = settings.metadata,
-        className       = settings.className,
+        classnameName       = settings.classnameName,
         namespace       = settings.namespace,
         states          = settings.states,
         text            = settings.text,
@@ -127,19 +127,19 @@ $.fn.state = function(parameters) {
         is: {
 
           active: function() {
-            return $module.hasClass(className.active);
+            return $module.hasclassname(classnameName.active);
           },
           loading: function() {
-            return $module.hasClass(className.loading);
+            return $module.hasclassname(classnameName.loading);
           },
           inactive: function() {
-            return !( $module.hasClass(className.active) );
+            return !( $module.hasclassname(classnameName.active) );
           },
           state: function(state) {
-            if(className[state] === undefined) {
+            if(classnameName[state] === undefined) {
               return false;
             }
-            return $module.hasClass( className[state] );
+            return $module.hasclassname( classnameName[state] );
           },
 
           enabled: function() {
@@ -178,22 +178,22 @@ $.fn.state = function(parameters) {
         },
 
         enable: function() {
-          $module.removeClass(className.disabled);
+          $module.removeclassname(classnameName.disabled);
         },
 
         disable: function() {
-          $module.addClass(className.disabled);
+          $module.addclassname(classnameName.disabled);
         },
 
         setState: function(state) {
           if(module.allows(state)) {
-            $module.addClass( className[state] );
+            $module.addclassname( classnameName[state] );
           }
         },
 
         removeState: function(state) {
           if(module.allows(state)) {
-            $module.removeClass( className[state] );
+            $module.removeclassname( classnameName[state] );
           }
         },
 
@@ -300,7 +300,7 @@ $.fn.state = function(parameters) {
           if( settings.activateTest.call(element) ) {
             module.debug('Setting state to active');
             $module
-              .addClass(className.active)
+              .addclassname(classnameName.active)
             ;
             module.update.text(text.active);
             settings.onActivate.call(element);
@@ -311,7 +311,7 @@ $.fn.state = function(parameters) {
           if( settings.deactivateTest.call(element) ) {
             module.debug('Setting state to inactive');
             $module
-              .removeClass(className.active)
+              .removeclassname(classnameName.active)
             ;
             module.update.text(text.inactive);
             settings.onDeactivate.call(element);
@@ -648,8 +648,8 @@ $.fn.state.settings = {
     storedText : 'stored-text'
   },
 
-  // change class on state
-  className: {
+  // change classname on state
+  classnameName: {
     active   : 'active',
     disabled : 'disabled',
     error    : 'error',

@@ -111,13 +111,13 @@
   width: '';
   align-self: top;
 }
-.ui.modal > [class*="top aligned"] {
+.ui.modal > [classname*="top aligned"] {
   align-self: top;
 }
-.ui.modal > [class*="middle aligned"] {
+.ui.modal > [classname*="middle aligned"] {
   align-self: middle;
 }
-.ui.modal > [class*="stretched"] {
+.ui.modal > [classname*="stretched"] {
   align-self: stretch;
 }
 
@@ -340,21 +340,21 @@
 
 
 /* Top Aligned Modal */
-.modals.dimmer[class*="top aligned"] .modal {
+.modals.dimmer[classname*="top aligned"] .modal {
   margin: 5vh auto;
 }
 @media only screen and (max-width: 767px) {
-  .modals.dimmer[class*="top aligned"] .modal {
+  .modals.dimmer[classname*="top aligned"] .modal {
     margin: 1rem auto;
   }
 }
 
 /* Legacy Top Aligned */
-.legacy.modals.dimmer[class*="top aligned"] {
+.legacy.modals.dimmer[classname*="top aligned"] {
   padding-top: 5vh;
 }
 @media only screen and (max-width: 767px) {
-  .legacy.modals.dimmer[class*="top aligned"] {
+  .legacy.modals.dimmer[classname*="top aligned"] {
     padding-top: 1rem;
   }
 }

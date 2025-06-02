@@ -499,7 +499,7 @@ i.icons .inverted.corner.icon {
 
 Semantic-UI integration of font-awesome :
 
-///class names are separated
+///classname names are separated
 i.icon.circle => i.icon.circle
 i.icon.circle-o => i.icon.circle.outline
 
@@ -513,7 +513,7 @@ i.icon.ellipsis-v => i.icon.ellipsis.vertical
 
 ASCII order is conserved for easier maintenance.
 
-Icons that only have one style 'outline', 'square' etc do not require this class
+Icons that only have one style 'outline', 'square' etc do not require this classname
 for instance `lemon icon` not `lemon outline icon` since there is only one lemon
 
 *******************************/

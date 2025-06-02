@@ -804,8 +804,8 @@
   .ui.form .fields {
     flex-wrap: wrap;
   }
-  .ui[class*="equal width"].form:not(.unstackable) .fields > .field,
-  .ui.form:not(.unstackable) [class*="equal width"].fields:not(.unstackable) > .field,
+  .ui[classname*="equal width"].form:not(.unstackable) .fields > .field,
+  .ui.form:not(.unstackable) [classname*="equal width"].fields:not(.unstackable) > .field,
   .ui.form:not(.unstackable) .two.fields:not(.unstackable) > .fields,
   .ui.form:not(.unstackable) .two.fields:not(.unstackable) > .field,
   .ui.form:not(.unstackable) .three.fields:not(.unstackable) > .fields,
@@ -920,8 +920,8 @@
      Equal Width
 ---------------------*/
 
-.ui[class*="equal width"].form .fields > .field,
-.ui.form [class*="equal width"].fields > .field {
+.ui[classname*="equal width"].form .fields > .field,
+.ui.form [classname*="equal width"].fields > .field {
   width: 100%;
   flex: 1 1 auto;
 }

@@ -53,7 +53,7 @@ $.fn.sidebar = function(parameters) {
           : $.extend({}, $.fn.sidebar.settings),
 
         selector        = settings.selector,
-        className       = settings.className,
+        classnameName       = settings.classnameName,
         namespace       = settings.namespace,
         regExp          = settings.regExp,
         error           = settings.error,
@@ -322,7 +322,7 @@ $.fn.sidebar = function(parameters) {
             if( $context.children(selector.pusher).length === 0 ) {
               module.debug('Adding wrapper element for sidebar');
               module.error(error.pusher);
-              $pusher = $('<div class="pusher" />');
+              $pusher = $('<div classname="pusher" />');
               $context
                 .children()
                   .not(selector.omitted)
@@ -420,10 +420,10 @@ $.fn.sidebar = function(parameters) {
         },
 
         othersAnimating: function() {
-          return ($sidebars.not($module).filter('.' + className.animating).length > 0);
+          return ($sidebars.not($module).filter('.' + classnameName.animating).length > 0);
         },
         othersVisible: function() {
-          return ($sidebars.not($module).filter('.' + className.visible).length > 0);
+          return ($sidebars.not($module).filter('.' + classnameName.visible).length > 0);
         },
         othersActive: function() {
           return(module.othersVisible() || module.othersAnimating());
@@ -431,7 +431,7 @@ $.fn.sidebar = function(parameters) {
 
         hideOthers: function(callback) {
           var
-            $otherSidebars = $sidebars.not($module).filter('.' + className.visible),
+            $otherSidebars = $sidebars.not($module).filter('.' + classnameName.visible),
             sidebarCount   = $otherSidebars.length,
             callbackCount  = 0
           ;
@@ -523,7 +523,7 @@ $.fn.sidebar = function(parameters) {
             module.set.animating();
             module.remove.visible();
             if(settings.dimPage && !module.othersVisible()) {
-              $pusher.removeClass(className.dimmed);
+              $pusher.removeclassname(classnameName.dimmed);
             }
           };
           transitionEnd = function(event) {
@@ -567,36 +567,36 @@ $.fn.sidebar = function(parameters) {
           // ios only (scroll on html not document). This prevent auto-resize canvas/scroll in ios
           // (This is no longer necessary in latest iOS)
           ios: function() {
-            $html.addClass(className.ios);
+            $html.addclassname(classnameName.ios);
           },
 
           // container
           pushed: function() {
-            $context.addClass(className.pushed);
+            $context.addclassname(classnameName.pushed);
           },
           pushable: function() {
-            $context.addClass(className.pushable);
+            $context.addclassname(classnameName.pushable);
           },
 
           // pusher
           dimmed: function() {
-            $pusher.addClass(className.dimmed);
+            $pusher.addclassname(classnameName.dimmed);
           },
 
           // sidebar
           active: function() {
-            $module.addClass(className.active);
+            $module.addclassname(classnameName.active);
           },
           animating: function() {
-            $module.addClass(className.animating);
+            $module.addclassname(classnameName.animating);
           },
           transition: function(transition) {
             transition = transition || module.get.transition();
-            $module.addClass(transition);
+            $module.addclassname(transition);
           },
           direction: function(direction) {
             direction = direction || module.get.direction();
-            $module.addClass(className[direction]);
+            $module.addclassname(classnameName[direction]);
           },
           visible: function() {
             $module.addClass(className.visible);

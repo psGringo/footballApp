@@ -288,7 +288,7 @@
   opacity: 0.8;
   pointer-events: auto;
 }
-.ui.search.selection > .icon.input:not([class*="left icon"]) > .icon ~ .remove.icon {
+.ui.search.selection > .icon.input:not([classname*="left icon"]) > .icon ~ .remove.icon {
   right: 1.85714em;
 }
 .ui.search.selection > .icon.input > .remove.icon:hover {
@@ -367,11 +367,11 @@
      Left / Right
 --------------------*/
 
-.ui[class*="left aligned"].search > .results {
+.ui[classname*="left aligned"].search > .results {
   right: auto;
   left: 0%;
 }
-.ui[class*="right aligned"].search > .results {
+.ui[classname*="right aligned"].search > .results {
   right: 0%;
   left: auto;
 }
