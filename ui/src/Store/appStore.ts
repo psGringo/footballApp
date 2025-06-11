@@ -1,6 +1,6 @@
 import {makeAutoObservable} from 'mobx';
 
-export classnamename AppStore {
+export class AppStore {
     count = 0;
 
     greeting: string = 'hello'
