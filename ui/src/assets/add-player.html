@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Goalkeeping Organizer</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/semantic.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<div class="main">
+    
+    <div class="ui text inverted menu">
+      <div class="item">
+        <a href="index.html" class="logo"><img src="img/Logo.png"><span class="text-off">Goalkeeping<br>Organizer</span></a>
+      </div>
+
+      <div class="right center menu">
+        <a href="#!" class="item text-off active">Account</a>
+        <a href="#!" class="item text-off">Training</a>
+        <a href="#!" class="item text-off">Pool</a>
+        <a href="#!" class="item text-off">Graphics</a>
+        <a href="#!" class="item text-off">Game</a>
+        <a href="#!" class="item text-off">Analysis</a>
+      </div><!-- center -->
+
+      <div class="right mobile-nav menu">
+        <div class="ui dropdown item inverted">
+          <div class="text">Account</div>
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="#!">Account</a>
+            <a class="item" href="#!">Training</a>
+            <a class="item" href="#!">Pool</a>
+            <a class="item" href="#!">Graphics</a>
+            <a class="item" href="#!">Game</a>
+            <a class="item" href="#!">Analysis</a>
+          </div>
+        </div>
+      </div><!-- mobile-nav -->
+
+      <div class="right menu">
+        <div class="item">
+          <a href="#!" class="logo-profile"><img src="img/ural-logo.svg"></a>
+        </div>
+        <div class="ui dropdown item inverted">
+          <div><span class="material-symbols">sports_and_outdoors</span></div>
+          <div class="menu">
+            <a class="item" href="#!"><span class="material-symbols">settings</span>Настройки</a>
+            <a class="item" href="index.html"><span class="material-symbols">logout</span> Выход</a>
+          </div>
+        </div>
+      </div><!-- right -->
+    </div><!-- menu 1 -->
+
+
+    <div class="ui top attached tabular inverted menu">
+      <a class="active item" data-tab="tab-1"><span class="material-symbols">group</span><span class="text-off">Team</span></a>
+      <a class="item" data-tab="tab-2"><span class="material-symbols">id_card</span><span class="text-off">Trainer</span></a>
+      <a class="item" data-tab="tab-3"><span class="material-symbols">lan</span><span class="text-off">Scheme</span></a>
+      <a class="item" data-tab="tab-4"><span class="material-symbols">folder_open</span><span class="text-off">Files</span></a>
+    </div><!-- menu 2 -->
+
+
+    <div class="ui bottom attached active tab segment" data-tab="tab-1">
+      <h2>Add Goalkeeper</h2>
+      <a href="#!" class="ui grey basic button add-btn"><span class="material-symbols">delete</span><span class="text-off">Delete</span></a>
+      <form class="ui form">
+
+        <div class="equal width fields">
+          <div class="field">
+            <label>First name</label>
+            <input type="text" placeholder="First Name">
+          </div>
+          <div class="field">
+            <label>Surname</label>
+            <input type="text" placeholder="Surname">
+          </div>
+          <div class="field">
+            <label>Date of birth</label>
+            <div class="ui icon input">
+              <input type="text" placeholder="Date">
+              <i class="material-symbols link icon">calendar_month</i>
+            </div>
+          </div>
+        </div>
+
+        <div class="three fields">
+          <div class="field">
+            <label>Status</label>
+            <div class="ui selection dropdown">
+              <input type="hidden" name="Status">
+              <i class="dropdown icon"></i>
+              <div class="default text">Goalkeeper</div>
+              <div class="menu">
+                <div class="item" data-value="1">Goalkeeper</div>
+                <div class="item" data-value="2">Scouting</div>
+                <div class="item" data-value="3">Inactive</div>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label>Photo</label>
+            <div class="ui left action input">
+              <button class="ui orange basic labeled icon button"><i class="material-symbols link icon">download</i> Download</button>
+              <input type="text" value="photo.jpg">
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Remarks</label>
+          <textarea></textarea>
+        </div>
+
+        <div class="eight wide field">
+          <label>Start of season</label>
+          <div class="two fields">
+            <div class="field">
+              <select class="ui fluid search dropdown" name="">
+                <option value="0">2025/2026</option>
+                <option value="1">2024/2025</option>
+              </select>
+            </div>
+            <div class="field">
+              <div class="ui icon input">
+                <input type="text" placeholder="Date">
+                <i class="material-symbols link icon">calendar_month</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <a href="account.html" class="ui orange button">Add Goalkeeper</a>
+      </form>
+    </div><!-- segment -->
+
+
+
+    <div class="footer">
+      <p>© «Goalkeeping Organizer», 2025</p>
+    </div>
+
+
+</div><!-- main -->
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/semantic.min.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+</html>

@@ -5,7 +5,7 @@ import './assets/css/semantic.css';
 import './assets/css/main.css';
 
 
-const container = document.getElementById('root')!;
-const root = createRoot(container);
+// const container = document. getElementById('root')!; // TODO подумать над переносом в root
+const root = createRoot(document.body);
 
 root.render(<App/>);

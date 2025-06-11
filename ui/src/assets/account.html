@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Goalkeeping Organizer</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/semantic.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script type="text/javascript">
+    function showModal1(){$('.modal1').modal('show')}
+    function showModal2(){$('.modal2').modal('show')}
+  </script>
+</head>
+<body>
+<div class="main">
+    
+    <div class="ui text inverted menu">
+
+      <div class="item">
+        <a href="index.html" class="logo"><img src="img/Logo.png"><span class="text-off">Goalkeeping<br>Organizer</span></a>
+      </div>
+
+      <div class="right center menu">
+        <a href="#!" class="item text-off active">Account</a>
+        <a href="#!" class="item text-off">Training</a>
+        <a href="#!" class="item text-off">Pool</a>
+        <a href="#!" class="item text-off">Graphics</a>
+        <a href="#!" class="item text-off">Game</a>
+        <a href="#!" class="item text-off">Analysis</a>
+      </div><!-- center -->
+
+      <div class="right mobile-nav menu">
+        <div class="ui dropdown item inverted">
+          <div class="text">Account</div>
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="#!">Account</a>
+            <a class="item" href="#!">Training</a>
+            <a class="item" href="#!">Pool</a>
+            <a class="item" href="#!">Graphics</a>
+            <a class="item" href="#!">Game</a>
+            <a class="item" href="#!">Analysis</a>
+          </div>
+        </div>
+      </div><!-- mobile-nav -->
+
+      <div class="right menu">
+        <div class="item">
+          <a href="#!" class="logo-profile"><img src="img/ural-logo.svg"></a>
+        </div>
+        <div class="ui dropdown item inverted">
+          <div><span class="material-symbols">sports_and_outdoors</span></div>
+          <div class="menu">
+            <a class="item" href="#!"><span class="material-symbols">settings</span>Настройки</a>
+            <a class="item" href="index.html"><span class="material-symbols">logout</span> Выход</a>
+          </div>
+        </div>
+      </div><!-- right -->
+    </div><!-- menu 1 -->
+
+
+    <div class="ui top attached tabular inverted menu">
+      <a class="active item" data-tab="tab-1"><span class="material-symbols">group</span><span class="text-off">Team</span></a>
+      <a class="item" data-tab="tab-2"><span class="material-symbols">id_card</span><span class="text-off">Trainer</span></a>
+      <a class="item" data-tab="tab-3"><span class="material-symbols">lan</span><span class="text-off">Scheme</span></a>
+      <a class="item" data-tab="tab-4"><span class="material-symbols">folder_open</span><span class="text-off">Files</span></a>
+    </div><!-- menu 2 -->
+
+
+    <div class="ui bottom attached active tab segment" data-tab="tab-1">
+
+        <div class="ui secondary menu">
+          <a class="active item" data-tab="tab-11"><span class="material-symbols">person</span><span class="text-off">Goalkeeper</span></a>
+          <a class="item" data-tab="tab-12"><span class="material-symbols">person_pin_circle</span><span class="text-off">Scouting</span></a>
+        </div><!-- menu 3 -->
+
+
+        <div class="ui bottom attached active tab" data-tab="tab-11">
+          <a href="add-player.html" class="ui orange basic button add-btn"><span class="material-symbols">add</span><span class="text-off">Add goalkeeper</span></a>
+
+          <table class="ui very basic inverted table">
+            <thead>
+              <tr>
+                <th width="35%">Name</th>
+                <th width="20%">Date of birth</th>
+                <th width="20%">Team</th>
+                <th width="20%">Start of season</th>
+                <th width="5%" class="right aligned"><a href="#!"><span class="material-symbols">download</span> PDF</a></th>
+              </tr>
+            </thead>
+          </table>
+
+          <div class="ui accordion">
+
+            <div class="title">
+              <table class="ui very basic selectable inverted table">
+                <tbody>
+                  <tr>
+                    <td width="35%"><i class="dropdown icon"></i> <strong>A. 1. Alex Selikhov</strong></td>
+                    <td width="20%">07.04.1994</td>
+                    <td width="20%">URAL</td>
+                    <td width="20%">20.02.2025</td>
+                    <td width="5%" class="right aligned"><a href="add-player.html"><span class="material-symbols">edit_square</span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="content">
+              <div class="ui grid">
+                <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                  <div class="profile-img"><img src="img/ava.png"></div>
+                </div>
+                <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                  <p>Родился в Среднеуральске<br>
+                  Выступал за ДЮСШ "Лидер" и "Юность"<br>
+                  В 2021 уехал в Академию Зенита и прошёл путь Зенит-м и Зенит-2</p>
+                  <p>В январе 2025 пришёл в Урал-2 из Зенит-2 как свободный агент ( имея в арсенале игры в молодёжной лиге и 10 матчей в ПФЛ)</p>
+                  <p>Сильные стороны:</p>
+                  <p>
+                    Игра на линии (реакция)<br>
+                    Подстраховка после ЗГП 4<br>
+                    Передачи низом и средние во фланг (правой ногой)<br>
+                  </p>
+                  <p>Зоны роста:</p>
+                  <p>
+                    Игра на перехватах после ЗГП 3<br>
+                    Игра левой ногой
+                  </p>
+                </div>
+              </div><!-- grid -->
+            </div><!-- content -->
+
+            <div class="title">
+              <table class="ui very basic selectable inverted table">
+                <tbody>
+                  <tr>
+                    <td width="35%"><i class="dropdown icon"></i> <strong>A . 3 . Denis Sherbickiy</strong></td>
+                    <td width="20%">07.04.1994</td>
+                    <td width="20%">URAL</td>
+                    <td width="20%">20.02.2025</td>
+                    <td width="5%" class="right aligned"><a href="add-player.html"><span class="material-symbols">edit_square</span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="content">
+              <div class="ui grid">
+                <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                  <div class="profile-img"><img src="img/ava.png"></div>
+                </div>
+                <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                  <p>Родился в Среднеуральске<br>
+                  Выступал за ДЮСШ "Лидер" и "Юность"<br>
+                  В 2021 уехал в Академию Зенита и прошёл путь Зенит-м и Зенит-2</p>
+                  <p>В январе 2025 пришёл в Урал-2 из Зенит-2 как свободный агент ( имея в арсенале игры в молодёжной лиге и 10 матчей в ПФЛ)</p>
+                  <p>Сильные стороны:</p>
+                  <p>
+                    Игра на линии (реакция)<br>
+                    Подстраховка после ЗГП 4<br>
+                    Передачи низом и средние во фланг (правой ногой)<br>
+                  </p>
+                  <p>Зоны роста:</p>
+                  <p>
+                    Игра на перехватах после ЗГП 3<br>
+                    Игра левой ногой
+                  </p>
+                </div>
+              </div><!-- grid -->
+            </div><!-- content -->
+
+            <div class="title">
+              <table class="ui very basic selectable inverted table">
+                <tbody>
+                  <tr>
+                    <td width="35%"><i class="dropdown icon"></i> <strong>A . 2 . Aleksey Mamin</strong></td>
+                    <td width="20%">07.04.1994</td>
+                    <td width="20%">URAL</td>
+                    <td width="20%">20.02.2025</td>
+                    <td width="5%" class="right aligned"><a href="add-player.html"><span class="material-symbols">edit_square</span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="content">
+              <div class="ui grid">
+                <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                  <div class="profile-img"><img src="img/ava.png"></div>
+                </div>
+                <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                  <p>Родился в Среднеуральске<br>
+                  Выступал за ДЮСШ "Лидер" и "Юность"<br>
+                  В 2021 уехал в Академию Зенита и прошёл путь Зенит-м и Зенит-2</p>
+                  <p>В январе 2025 пришёл в Урал-2 из Зенит-2 как свободный агент ( имея в арсенале игры в молодёжной лиге и 10 матчей в ПФЛ)</p>
+                  <p>Сильные стороны:</p>
+                  <p>
+                    Игра на линии (реакция)<br>
+                    Подстраховка после ЗГП 4<br>
+                    Передачи низом и средние во фланг (правой ногой)<br>
+                  </p>
+                  <p>Зоны роста:</p>
+                  <p>
+                    Игра на перехватах после ЗГП 3<br>
+                    Игра левой ногой
+                  </p>
+                </div>
+              </div><!-- grid -->
+            </div><!-- content -->
+
+            <div class="title">
+              <table class="ui very basic selectable inverted table">
+                <tbody>
+                  <tr>
+                    <td width="35%"><i class="dropdown icon"></i> <strong>B . 5. Pavlov Vladimir</strong></td>
+                    <td width="20%">07.04.1994</td>
+                    <td width="20%">URAL</td>
+                    <td width="20%">20.02.2025</td>
+                    <td width="5%" class="right aligned"><a href="add-player.html"><span class="material-symbols">edit_square</span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="content">
+              <div class="ui grid">
+                <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                  <div class="profile-img"><img src="img/ava.png"></div>
+                </div>
+                <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                  <p>Родился в Среднеуральске<br>
+                  Выступал за ДЮСШ "Лидер" и "Юность"<br>
+                  В 2021 уехал в Академию Зенита и прошёл путь Зенит-м и Зенит-2</p>
+                  <p>В январе 2025 пришёл в Урал-2 из Зенит-2 как свободный агент ( имея в арсенале игры в молодёжной лиге и 10 матчей в ПФЛ)</p>
+                  <p>Сильные стороны:</p>
+                  <p>
+                    Игра на линии (реакция)<br>
+                    Подстраховка после ЗГП 4<br>
+                    Передачи низом и средние во фланг (правой ногой)<br>
+                  </p>
+                  <p>Зоны роста:</p>
+                  <p>
+                    Игра на перехватах после ЗГП 3<br>
+                    Игра левой ногой
+                  </p>
+                </div>
+              </div><!-- grid -->
+            </div><!-- content -->
+
+            <div class="title">
+              <table class="ui very basic selectable inverted table">
+                <tbody>
+                  <tr>
+                    <td width="35%"><i class="dropdown icon"></i> <strong>B . 4 . Stepan Permyakov</strong></td>
+                    <td width="20%">07.04.1994</td>
+                    <td width="20%">URAL</td>
+                    <td width="20%">20.02.2025</td>
+                    <td width="5%" class="right aligned"><a href="add-player.html"><span class="material-symbols">edit_square</span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="content">
+              <div class="ui grid">
+                <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                  <div class="profile-img"><img src="img/ava.png"></div>
+                </div>
+                <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                  <p>Родился в Среднеуральске<br>
+                  Выступал за ДЮСШ "Лидер" и "Юность"<br>
+                  В 2021 уехал в Академию Зенита и прошёл путь Зенит-м и Зенит-2</p>
+                  <p>В январе 2025 пришёл в Урал-2 из Зенит-2 как свободный агент ( имея в арсенале игры в молодёжной лиге и 10 матчей в ПФЛ)</p>
+                  <p>Сильные стороны:</p>
+                  <p>
+                    Игра на линии (реакция)<br>
+                    Подстраховка после ЗГП 4<br>
+                    Передачи низом и средние во фланг (правой ногой)<br>
+                  </p>
+                  <p>Зоны роста:</p>
+                  <p>
+                    Игра на перехватах после ЗГП 3<br>
+                    Игра левой ногой
+                  </p>
+                </div>
+              </div><!-- grid -->
+            </div><!-- content -->
+
+            <div class="title">
+              <table class="ui very basic selectable inverted table">
+                <tbody>
+                  <tr>
+                    <td width="35%"><i class="dropdown icon"></i> <strong>B . 7. Ykov Zarytsky</strong></td>
+                    <td width="20%">07.04.1994</td>
+                    <td width="20%">URAL</td>
+                    <td width="20%">20.02.2025</td>
+                    <td width="5%" class="right aligned"><a href="add-player.html"><span class="material-symbols">edit_square</span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="content">
+              <div class="ui grid">
+                <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                  <div class="profile-img"><img src="img/ava.png"></div>
+                </div>
+                <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                  <p>Родился в Среднеуральске<br>
+                  Выступал за ДЮСШ "Лидер" и "Юность"<br>
+                  В 2021 уехал в Академию Зенита и прошёл путь Зенит-м и Зенит-2</p>
+                  <p>В январе 2025 пришёл в Урал-2 из Зенит-2 как свободный агент ( имея в арсенале игры в молодёжной лиге и 10 матчей в ПФЛ)</p>
+                  <p>Сильные стороны:</p>
+                  <p>
+                    Игра на линии (реакция)<br>
+                    Подстраховка после ЗГП 4<br>
+                    Передачи низом и средние во фланг (правой ногой)<br>
+                  </p>
+                  <p>Зоны роста:</p>
+                  <p>
+                    Игра на перехватах после ЗГП 3<br>
+                    Игра левой ногой
+                  </p>
+                </div>
+              </div><!-- grid -->
+            </div><!-- content -->
+
+            <div class="title">
+              <table class="ui very basic selectable inverted table">
+                <tbody>
+                  <tr>
+                    <td width="35%"><i class="dropdown icon"></i> <strong>В . 6 . Maxim Markov</strong></td>
+                    <td width="20%">07.04.1994</td>
+                    <td width="20%">URAL</td>
+                    <td width="20%">20.02.2025</td>
+                    <td width="5%" class="right aligned"><a href="add-player.html"><span class="material-symbols">edit_square</span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="content">
+              <div class="ui grid">
+                <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                  <div class="profile-img"><img src="img/ava.png"></div>
+                </div>
+                <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                  <p>Родился в Среднеуральске<br>
+                  Выступал за ДЮСШ "Лидер" и "Юность"<br>
+                  В 2021 уехал в Академию Зенита и прошёл путь Зенит-м и Зенит-2</p>
+                  <p>В январе 2025 пришёл в Урал-2 из Зенит-2 как свободный агент ( имея в арсенале игры в молодёжной лиге и 10 матчей в ПФЛ)</p>
+                  <p>Сильные стороны:</p>
+                  <p>
+                    Игра на линии (реакция)<br>
+                    Подстраховка после ЗГП 4<br>
+                    Передачи низом и средние во фланг (правой ногой)<br>
+                  </p>
+                  <p>Зоны роста:</p>
+                  <p>
+                    Игра на перехватах после ЗГП 3<br>
+                    Игра левой ногой
+                  </p>
+                </div>
+              </div><!-- grid -->
+            </div><!-- content -->
+
+            <div class="title">
+              <table class="ui very basic selectable inverted table">
+                <tbody>
+                  <tr>
+                    <td width="35%"><i class="dropdown icon"></i> <strong>A . 4 . Ivan Kuznetsov</strong></td>
+                    <td width="20%">07.04.1994</td>
+                    <td width="20%">URAL</td>
+                    <td width="20%">20.02.2025</td>
+                    <td width="5%" class="right aligned"><a href="add-player.html"><span class="material-symbols">edit_square</span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="content">
+              <div class="ui grid">
+                <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                  <div class="profile-img"><img src="img/ava.png"></div>
+                </div>
+                <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                  <p>Родился в Среднеуральске<br>
+                  Выступал за ДЮСШ "Лидер" и "Юность"<br>
+                  В 2021 уехал в Академию Зенита и прошёл путь Зенит-м и Зенит-2</p>
+                  <p>В январе 2025 пришёл в Урал-2 из Зенит-2 как свободный агент ( имея в арсенале игры в молодёжной лиге и 10 матчей в ПФЛ)</p>
+                  <p>Сильные стороны:</p>
+                  <p>
+                    Игра на линии (реакция)<br>
+                    Подстраховка после ЗГП 4<br>
+                    Передачи низом и средние во фланг (правой ногой)<br>
+                  </p>
+                  <p>Зоны роста:</p>
+                  <p>
+                    Игра на перехватах после ЗГП 3<br>
+                    Игра левой ногой
+                  </p>
+                </div>
+              </div><!-- grid -->
+            </div><!-- content -->
+
+            <div class="title">
+              <table class="ui very basic selectable inverted table">
+                <tbody>
+                  <tr>
+                    <td width="35%"><i class="dropdown icon"></i> <strong>C . 8 . Pavel Panfilov</strong></td>
+                    <td width="20%">07.04.1994</td>
+                    <td width="20%">URAL</td>
+                    <td width="20%">20.02.2025</td>
+                    <td width="5%" class="right aligned"><a href="add-player.html"><span class="material-symbols">edit_square</span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="content">
+              <div class="ui grid">
+                <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                  <div class="profile-img"><img src="img/ava.png"></div>
+                </div>
+                <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                  <p>Родился в Среднеуральске<br>
+                  Выступал за ДЮСШ "Лидер" и "Юность"<br>
+                  В 2021 уехал в Академию Зенита и прошёл путь Зенит-м и Зенит-2</p>
+                  <p>В январе 2025 пришёл в Урал-2 из Зенит-2 как свободный агент ( имея в арсенале игры в молодёжной лиге и 10 матчей в ПФЛ)</p>
+                  <p>Сильные стороны:</p>
+                  <p>
+                    Игра на линии (реакция)<br>
+                    Подстраховка после ЗГП 4<br>
+                    Передачи низом и средние во фланг (правой ногой)<br>
+                  </p>
+                  <p>Зоны роста:</p>
+                  <p>
+                    Игра на перехватах после ЗГП 3<br>
+                    Игра левой ногой
+                  </p>
+                </div>
+              </div><!-- grid -->
+            </div><!-- content -->
+
+            <div class="title">
+              <table class="ui very basic selectable inverted table">
+                <tbody>
+                  <tr>
+                    <td width="35%"><i class="dropdown icon"></i> <strong>D . 10 . Artem Sokolov </strong></td>
+                    <td width="20%">07.04.1994</td>
+                    <td width="20%">URAL</td>
+                    <td width="20%">20.02.2025</td>
+                    <td width="5%" class="right aligned"><a href="add-player.html"><span class="material-symbols">edit_square</span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="content">
+              <div class="ui grid">
+                <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                  <div class="profile-img"><img src="img/ava.png"></div>
+                </div>
+                <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                  <p>Родился в Среднеуральске<br>
+                  Выступал за ДЮСШ "Лидер" и "Юность"<br>
+                  В 2021 уехал в Академию Зенита и прошёл путь Зенит-м и Зенит-2</p>
+                  <p>В январе 2025 пришёл в Урал-2 из Зенит-2 как свободный агент ( имея в арсенале игры в молодёжной лиге и 10 матчей в ПФЛ)</p>
+                  <p>Сильные стороны:</p>
+                  <p>
+                    Игра на линии (реакция)<br>
+                    Подстраховка после ЗГП 4<br>
+                    Передачи низом и средние во фланг (правой ногой)<br>
+                  </p>
+                  <p>Зоны роста:</p>
+                  <p>
+                    Игра на перехватах после ЗГП 3<br>
+                    Игра левой ногой
+                  </p>
+                </div>
+              </div><!-- grid -->
+            </div><!-- content -->
+
+          </div><!-- accordion -->
+
+          <h2 style="margin: 4rem 1rem 2rem 1rem;">Inactive</h2>
+          <table class="ui very basic inverted table">
+            <thead>
+              <tr>
+                <th width="35%">Name</th>
+                <th width="20%">Date of birth</th>
+                <th width="20%">Team</th>
+                <th width="20%">Start of season</th>
+                <th width="5%" class="right aligned"><a href="#!"><span class="material-symbols">download</span> PDF</a></th>
+              </tr>
+            </thead>
+          </table>
+
+          <div class="ui accordion">
+
+            <div class="title">
+              <table class="ui very basic selectable inverted table">
+                <tbody>
+                  <tr>
+                    <td width="35%"><i class="dropdown icon"></i> <strong>Oleg Baklov</strong></td>
+                    <td width="20%">07.04.1994</td>
+                    <td width="20%">URAL</td>
+                    <td width="20%">20.02.2025</td>
+                    <td width="5%" class="right aligned"><a href="add-player.html"><span class="material-symbols">edit_square</span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="content">
+              <div class="ui grid">
+                <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                  <div class="profile-img"><img src="img/ava.png"></div>
+                </div>
+                <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                  <p>Родился в Среднеуральске<br>
+                  Выступал за ДЮСШ "Лидер" и "Юность"<br>
+                  В 2021 уехал в Академию Зенита и прошёл путь Зенит-м и Зенит-2</p>
+                  <p>В январе 2025 пришёл в Урал-2 из Зенит-2 как свободный агент ( имея в арсенале игры в молодёжной лиге и 10 матчей в ПФЛ)</p>
+                  <p>Сильные стороны:</p>
+                  <p>
+                    Игра на линии (реакция)<br>
+                    Подстраховка после ЗГП 4<br>
+                    Передачи низом и средние во фланг (правой ногой)<br>
+                  </p>
+                  <p>Зоны роста:</p>
+                  <p>
+                    Игра на перехватах после ЗГП 3<br>
+                    Игра левой ногой
+                  </p>
+                </div>
+              </div><!-- grid -->
+            </div><!-- content -->
+
+            <div class="title">
+              <table class="ui very basic selectable inverted table">
+                <tbody>
+                  <tr>
+                    <td width="35%"><i class="dropdown icon"></i> <strong>Nikita Alekseev</strong></td>
+                    <td width="20%">07.04.1994</td>
+                    <td width="20%">URAL</td>
+                    <td width="20%">20.02.2025</td>
+                    <td width="5%" class="right aligned"><a href="add-player.html"><span class="material-symbols">edit_square</span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="content">
+              <div class="ui grid">
+                <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                  <div class="profile-img"><img src="img/ava.png"></div>
+                </div>
+                <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                  <p>Родился в Среднеуральске<br>
+                  Выступал за ДЮСШ "Лидер" и "Юность"<br>
+                  В 2021 уехал в Академию Зенита и прошёл путь Зенит-м и Зенит-2</p>
+                  <p>В январе 2025 пришёл в Урал-2 из Зенит-2 как свободный агент ( имея в арсенале игры в молодёжной лиге и 10 матчей в ПФЛ)</p>
+                  <p>Сильные стороны:</p>
+                  <p>
+                    Игра на линии (реакция)<br>
+                    Подстраховка после ЗГП 4<br>
+                    Передачи низом и средние во фланг (правой ногой)<br>
+                  </p>
+                  <p>Зоны роста:</p>
+                  <p>
+                    Игра на перехватах после ЗГП 3<br>
+                    Игра левой ногой
+                  </p>
+                </div>
+              </div><!-- grid -->
+            </div><!-- content -->
+
+            <div class="title">
+              <table class="ui very basic selectable inverted table">
+                <tbody>
+                  <tr>
+                    <td width="35%"><i class="dropdown icon"></i> <strong>C . 5 . Shataev Vycheslav</strong></td>
+                    <td width="20%">07.04.1994</td>
+                    <td width="20%">URAL</td>
+                    <td width="20%">20.02.2025</td>
+                    <td width="5%" class="right aligned"><a href="add-player.html"><span class="material-symbols">edit_square</span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="content">
+              <div class="ui grid">
+                <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                  <div class="profile-img"><img src="img/ava.png"></div>
+                </div>
+                <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                  <p>Родился в Среднеуральске<br>
+                  Выступал за ДЮСШ "Лидер" и "Юность"<br>
+                  В 2021 уехал в Академию Зенита и прошёл путь Зенит-м и Зенит-2</p>
+                  <p>В январе 2025 пришёл в Урал-2 из Зенит-2 как свободный агент ( имея в арсенале игры в молодёжной лиге и 10 матчей в ПФЛ)</p>
+                  <p>Сильные стороны:</p>
+                  <p>
+                    Игра на линии (реакция)<br>
+                    Подстраховка после ЗГП 4<br>
+                    Передачи низом и средние во фланг (правой ногой)<br>
+                  </p>
+                  <p>Зоны роста:</p>
+                  <p>
+                    Игра на перехватах после ЗГП 3<br>
+                    Игра левой ногой
+                  </p>
+                </div>
+              </div><!-- grid -->
+            </div><!-- content -->
+
+          </div><!-- accordion -->
+        </div><!-- segment -->
+
+
+        <div class="ui bottom attached tab" data-tab="tab-12">
+          <a href="add-player.html" class="ui orange basic button add-btn"><span class="material-symbols">add</span><span class="text-off">Add scouting</span></a>
+
+          <table class="ui very basic inverted table">
+            <thead>
+              <tr>
+                <th width="35%">Name</th>
+                <th width="20%">Date of birth</th>
+                <th width="20%">Team</th>
+                <th width="20%">Start of season</th>
+                <th width="5%" class="right aligned"><a href="#!"><span class="material-symbols">download</span> PDF</a></th>
+              </tr>
+            </thead>
+          </table>
+
+          <div class="ui accordion">
+
+            <div class="title">
+              <table class="ui very basic selectable inverted table">
+                <tbody>
+                  <tr>
+                    <td width="35%"><i class="dropdown icon"></i> <strong>Ilya Pomazun</strong></td>
+                    <td width="20%">07.04.1994</td>
+                    <td width="20%">URAL</td>
+                    <td width="20%">20.02.2025</td>
+                    <td width="5%" class="right aligned"><a href="add-player.html"><span class="material-symbols">edit_square</span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="content">
+              <div class="ui grid">
+                <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                  <div class="profile-img"><img src="img/ava.png"></div>
+                </div>
+                <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                  <p>Родился в Среднеуральске<br>
+                  Выступал за ДЮСШ "Лидер" и "Юность"<br>
+                  В 2021 уехал в Академию Зенита и прошёл путь Зенит-м и Зенит-2</p>
+                  <p>В январе 2025 пришёл в Урал-2 из Зенит-2 как свободный агент ( имея в арсенале игры в молодёжной лиге и 10 матчей в ПФЛ)</p>
+                  <p>Сильные стороны:</p>
+                  <p>
+                    Игра на линии (реакция)<br>
+                    Подстраховка после ЗГП 4<br>
+                    Передачи низом и средние во фланг (правой ногой)<br>
+                  </p>
+                  <p>Зоны роста:</p>
+                  <p>
+                    Игра на перехватах после ЗГП 3<br>
+                    Игра левой ногой
+                  </p>
+                </div>
+              </div><!-- grid -->
+            </div><!-- content -->
+
+            <div class="title">
+              <table class="ui very basic selectable inverted table">
+                <tbody>
+                  <tr>
+                    <td width="35%"><i class="dropdown icon"></i> <strong>Vladislav Poletaev</strong></td>
+                    <td width="20%">07.04.1994</td>
+                    <td width="20%">URAL</td>
+                    <td width="20%">20.02.2025</td>
+                    <td width="5%" class="right aligned"><a href="add-player.html"><span class="material-symbols">edit_square</span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="content">
+              <div class="ui grid">
+                <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                  <div class="profile-img"><img src="img/ava.png"></div>
+                </div>
+                <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                  <p>Родился в Среднеуральске<br>
+                  Выступал за ДЮСШ "Лидер" и "Юность"<br>
+                  В 2021 уехал в Академию Зенита и прошёл путь Зенит-м и Зенит-2</p>
+                  <p>В январе 2025 пришёл в Урал-2 из Зенит-2 как свободный агент ( имея в арсенале игры в молодёжной лиге и 10 матчей в ПФЛ)</p>
+                  <p>Сильные стороны:</p>
+                  <p>
+                    Игра на линии (реакция)<br>
+                    Подстраховка после ЗГП 4<br>
+                    Передачи низом и средние во фланг (правой ногой)<br>
+                  </p>
+                  <p>Зоны роста:</p>
+                  <p>
+                    Игра на перехватах после ЗГП 3<br>
+                    Игра левой ногой
+                  </p>
+                </div>
+              </div><!-- grid -->
+            </div><!-- content -->
+
+            <div class="title">
+              <table class="ui very basic selectable inverted table">
+                <tbody>
+                  <tr>
+                    <td width="35%"><i class="dropdown icon"></i> <strong>Ivan Zemlyakov</strong></td>
+                    <td width="20%">07.04.1994</td>
+                    <td width="20%">URAL</td>
+                    <td width="20%">20.02.2025</td>
+                    <td width="5%" class="right aligned"><a href="add-player.html"><span class="material-symbols">edit_square</span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="content">
+              <div class="ui grid">
+                <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                  <div class="profile-img"><img src="img/ava.png"></div>
+                </div>
+                <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                  <p>Родился в Среднеуральске<br>
+                  Выступал за ДЮСШ "Лидер" и "Юность"<br>
+                  В 2021 уехал в Академию Зенита и прошёл путь Зенит-м и Зенит-2</p>
+                  <p>В январе 2025 пришёл в Урал-2 из Зенит-2 как свободный агент ( имея в арсенале игры в молодёжной лиге и 10 матчей в ПФЛ)</p>
+                  <p>Сильные стороны:</p>
+                  <p>
+                    Игра на линии (реакция)<br>
+                    Подстраховка после ЗГП 4<br>
+                    Передачи низом и средние во фланг (правой ногой)<br>
+                  </p>
+                  <p>Зоны роста:</p>
+                  <p>
+                    Игра на перехватах после ЗГП 3<br>
+                    Игра левой ногой
+                  </p>
+                </div>
+              </div><!-- grid -->
+            </div><!-- content -->
+
+          </div><!-- accordion -->
+        </div><!-- segment -->
+
+    </div><!-- segment -->
+
+
+    <div class="ui bottom attached tab segment" data-tab="tab-2">
+        <h2>Trainer</h2>
+        <a href="add-trainer.html" class="ui orange basic button add-btn"><span class="material-symbols">add</span><span class="text-off">Add trainer</span></a>
+
+        <table class="ui very basic inverted table">
+          <thead>
+            <tr>
+              <th width="35%">Name</th>
+              <th width="20%">Date of birth</th>
+              <th width="20%">Team</th>
+              <th width="20%">Start of season</th>
+              <th width="5%" class="right aligned"><a href="#!"><span class="material-symbols">download</span> PDF</a></th>
+            </tr>
+          </thead>
+        </table>
+
+        <div class="ui accordion">
+
+          <div class="title">
+            <table class="ui very basic selectable inverted table">
+              <tbody>
+                <tr>
+                  <td width="35%"><i class="dropdown icon"></i> <strong>Андрей Владиславович Шпилёв</strong></td>
+                  <td width="20%">03.04.1978</td>
+                  <td width="20%">URAL</td>
+                  <td width="20%">2015</td>
+                  <td width="5%" class="right aligned"><a href="add-trainer.html"><span class="material-symbols">edit_square</span></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="content">
+            <div class="ui grid">
+              <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  two wide widescreen  column">
+                <div class="profile-img"><img src="img/Andrey.png"></div>
+              </div>
+              <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  fourteen wide widescreen  column">
+                <p>Футболом начал заниматься в 7 лет. Первая команда – «Горняк» (Кушва), первый тренер – Синицын Г. М. Образование высшее, закончил УГГГА (Уральская Горно-геологическая академия) в 2003 году.</p>
+                <p>Профессиональную футбольную карьеру Андрей Шпилев начал в 1993 году, отыграв 4 сезона в кушвинском «Горняке». Далее он выступал на первенство КФК в екатеринбургской команде РТИ, а также в мини-футбольном клубе «Атриум-УПИ». С 1999 по 2002 гг. Андрей Шпилев защищал ворота ростовского СКА, а в 2003 году был приглашен в «Урал», в котором выступал в 2003 и 2004 годах.</p>
+                <p>С 2007 года работал тренером вратарей молодежных команд клуба, а в 2014 году получил приглашение в тренерский штаб основной команды.</p>
+              </div>
+            </div><!-- grid -->
+          </div><!-- content -->
+
+          <div class="title">
+            <table class="ui very basic selectable inverted table">
+              <tbody>
+                <tr>
+                  <td width="35%"><i class="dropdown icon"></i> <strong>Сергей Александрович Томаров</strong></td>
+                  <td width="20%">25.05.1982</td>
+                  <td width="20%">URAL</td>
+                  <td width="20%">2024</td>
+                  <td width="5%" class="right aligned"><a href="add-trainer.html"><span class="material-symbols">edit_square</span></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="content">
+            <div class="ui grid">
+              <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                <div class="profile-img"><img src="img/ava.png"></div>
+              </div>
+              <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                <p>. . .</p>
+                <p>. . .</p>
+                <p>. . .</p>
+              </div>
+            </div><!-- grid -->
+          </div><!-- content -->
+
+          <div class="title">
+            <table class="ui very basic selectable inverted table">
+              <tbody>
+                <tr>
+                  <td width="35%"><i class="dropdown icon"></i> <strong>Олег Александрович Шатов</strong></td>
+                  <td width="20%">29.07.1990</td>
+                  <td width="20%">URAL</td>
+                  <td width="20%">2025</td>
+                  <td width="5%" class="right aligned"><a href="add-trainer.html"><span class="material-symbols">edit_square</span></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="content">
+            <div class="ui grid">
+              <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                <div class="profile-img"><img src="img/ava.png"></div>
+              </div>
+              <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                <p>. . .</p>
+                <p>. . .</p>
+                <p>. . .</p>
+              </div>
+            </div><!-- grid -->
+          </div><!-- content -->
+
+          <div class="title">
+            <table class="ui very basic selectable inverted table">
+              <tbody>
+                <tr>
+                  <td width="35%"><i class="dropdown icon"></i> <strong>Мирослав Юрьевич Ромащенко</strong></td>
+                  <td width="20%">16.12.1973</td>
+                  <td width="20%">URAL</td>
+                  <td width="20%">2025</td>
+                  <td width="5%" class="right aligned"><a href="add-trainer.html"><span class="material-symbols">edit_square</span></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="content">
+            <div class="ui grid">
+              <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                <div class="profile-img"><img src="img/ava.png"></div>
+              </div>
+              <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                <p>. . .</p>
+                <p>. . .</p>
+                <p>. . .</p>
+              </div>
+            </div><!-- grid -->
+          </div><!-- content -->
+
+          <div class="title">
+            <table class="ui very basic selectable inverted table">
+              <tbody>
+                <tr>
+                  <td width="35%"><i class="dropdown icon"></i> <strong>Александр Львович Шалагин</strong></td>
+                  <td width="20%">09.09.1982</td>
+                  <td width="20%">URAL</td>
+                  <td width="20%">2025</td>
+                  <td width="5%" class="right aligned"><a href="add-trainer.html"><span class="material-symbols">edit_square</span></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="content">
+            <div class="ui grid">
+              <div class="six wide mobile  five wide tablet  four wide computer  three wide large screen  three wide widescreen  column">
+                <div class="profile-img"><img src="img/ava.png"></div>
+              </div>
+              <div class="sixteen wide mobile  eleven wide tablet  twelve wide computer  thirteen wide large screen  thirteen wide widescreen  column">
+                <p>. . .</p>
+                <p>. . .</p>
+                <p>. . .</p>
+              </div>
+            </div><!-- grid -->
+          </div><!-- content -->
+
+        </div><!-- accordion -->
+    </div><!-- segment -->
+
+
+    <div class="ui bottom attached tab segment" data-tab="tab-3">
+        <h2>Scheme</h2>
+        <div class="loader-box">
+          <div class="ui active centered inline big text loader">Scheme</div>
+        </div>
+    </div><!-- segment -->
+
+
+    <div class="ui bottom attached tab segment" data-tab="tab-4">
+        <div class="ui secondary menu">
+          <a class="active item" data-tab="tab-31"><span class="material-symbols">folder</span><span class="text-off">Training</span></a>
+          <a class="item" data-tab="tab-32"><span class="material-symbols">folder</span><span class="text-off">Exercise Pool</span></a>
+          <a class="item" data-tab="tab-33"><span class="material-symbols">folder</span><span class="text-off">Game</span></a>
+          <a class="item" data-tab="tab-34"><span class="material-symbols">folder</span><span class="text-off">Graphics</span></a>
+        </div><!-- menu 3 -->
+
+        <div class="ui bottom attached active tab" data-tab="tab-31">
+          <a href="#!" class="ui orange basic button add-btn"><span class="material-symbols">add</span><span class="text-off">Create a folder</span></a>
+          <div class="ui grid">
+
+            <div class="sixteen wide mobile  eight wide tablet  four wide computer column">
+              <div class="ui card">
+                <div class="image">
+                  <iframe width="100%" height="200" src="https://rutube.ru/play/embed/54853f8ac0c1a03e4e2dd4f976ddacae" frameborder="0"></iframe>
+                </div>
+                <div class="content">
+                  <a href="#!" class="right floated"><span class="material-symbols">edit_square</span></a>
+                  <a href="#!" class="header" onclick="showModal2()"><span>Трансляция матча</span></a>
+                  <div class="meta">
+                    <span class="date">25.05.2025</span>
+                  </div>
+                </div>
+              </div><!-- card -->
+            </div><!-- column -->
+
+            <div class="sixteen wide mobile  eight wide tablet  four wide computer column">
+              <div class="ui card">
+                <div class="image">
+                  <a href="#!" onclick="showModal1()"><img class="ui fluid image" src="img/foto.jpg"></a>
+                </div>
+                <div class="content">
+                  <a href="#!" class="right floated"><span class="material-symbols">edit_square</span></a>
+                  <a href="#!" class="header" onclick="showModal1()">Тренеровка</a>
+                  <div class="meta">
+                    <span class="date">25.05.2025</span>
+                  </div>
+                </div>
+              </div><!-- card -->
+            </div><!-- column -->
+
+            <div class="sixteen wide mobile  eight wide tablet  four wide computer column">
+              <div class="ui card">
+                <div class="image">
+                  <iframe width="100%" height="200" src="https://rutube.ru/play/embed/54853f8ac0c1a03e4e2dd4f976ddacae" frameborder="0"></iframe>
+                </div>
+                <div class="content">
+                  <a href="#!" class="right floated"><span class="material-symbols">edit_square</span></a>
+                  <a href="#!" class="header" onclick="showModal2()"><span>Трансляция матча</span></a>
+                  <div class="meta">
+                    <span class="date">25.05.2025</span>
+                  </div>
+                </div>
+              </div><!-- card -->
+            </div><!-- column -->
+
+            <div class="sixteen wide mobile  eight wide tablet  four wide computer column">
+              <div class="ui card">
+                <div class="image">
+                  <a href="#!" onclick="showModal1()"><img class="ui fluid image" src="img/foto3.jpg"></a>
+                </div>
+                <div class="content">
+                  <a href="#!" class="right floated"><span class="material-symbols">edit_square</span></a>
+                  <a href="#!" class="header" onclick="showModal1()">Тренеровка</a>
+                  <div class="meta">
+                    <span class="date">25.05.2025</span>
+                  </div>
+                </div>
+              </div><!-- card -->
+            </div><!-- column -->
+
+            <div class="sixteen wide mobile  eight wide tablet  four wide computer column">
+              <div class="ui card">
+                <div class="image">
+                  <a href="#!" onclick="showModal1()"><img class="ui fluid image" src="img/foto1.jpg"></a>
+                </div>
+                <div class="content">
+                  <a href="#!" class="right floated"><span class="material-symbols">edit_square</span></a>
+                  <a href="#!" class="header" onclick="showModal1()">Тренеровка</a>
+                  <div class="meta">
+                    <span class="date">25.05.2025</span>
+                  </div>
+                </div>
+              </div><!-- card -->
+            </div><!-- column -->
+
+            <div class="sixteen wide mobile  eight wide tablet  four wide computer column">
+              <div class="ui card">
+                <div class="image">
+                  <iframe width="100%" height="200" src="https://rutube.ru/play/embed/54853f8ac0c1a03e4e2dd4f976ddacae" frameborder="0"></iframe>
+                </div>
+                <div class="content">
+                  <a href="#!" class="right floated"><span class="material-symbols">edit_square</span></a>
+                  <a href="#!" class="header" onclick="showModal2()"><span>Трансляция матча</span></a>
+                  <div class="meta">
+                    <span class="date">25.05.2025</span>
+                  </div>
+                </div>
+              </div><!-- card -->
+            </div><!-- column -->
+
+            <div class="sixteen wide mobile  eight wide tablet  four wide computer column">
+              <div class="ui card">
+                <div class="image">
+                  <a href="#!" onclick="showModal1()"><img class="ui fluid image" src="img/foto2.jpg"></a>
+                </div>
+                <div class="content">
+                  <a href="#!" class="right floated"><span class="material-symbols">edit_square</span></a>
+                  <a href="#!" class="header" onclick="showModal1()">Тренеровка</a>
+                  <div class="meta">
+                    <span class="date">25.05.2025</span>
+                  </div>
+                </div>
+              </div><!-- card -->
+            </div><!-- column -->
+
+            <div class="sixteen wide mobile  eight wide tablet  four wide computer column">
+              <div class="ui card">
+                <div class="image">
+                  <iframe width="100%" height="200" src="https://rutube.ru/play/embed/54853f8ac0c1a03e4e2dd4f976ddacae" frameborder="0"></iframe>
+                </div>
+                <div class="content">
+                  <a href="#!" class="right floated"><span class="material-symbols">edit_square</span></a>
+                  <a href="#!" class="header" onclick="showModal2()"><span>Трансляция матча</span></a>
+                  <div class="meta">
+                    <span class="date">25.05.2025</span>
+                  </div>
+                </div>
+              </div><!-- card -->
+            </div><!-- column -->
+
+          </div><!-- grid -->
+        </div><!-- segment -->
+    </div><!-- segment -->
+
+    
+
+    <div class="ui modal modal1">
+      <i class="material-symbols close">close</i>
+      <div class="header">Тренеровка</div>
+      <div class="content">
+        <img class="ui fluid image" src="img/foto.jpg">
+      </div>
+    </div><!-- modal -->
+
+    <div class="ui modal modal2">
+      <i class="material-symbols close">close</i>
+      <div class="header">Трансляция матча</div>
+      <div class="content">
+        <iframe width="100%" height="600" src="https://rutube.ru/play/embed/54853f8ac0c1a03e4e2dd4f976ddacae" frameborder="0"></iframe> 
+      </div>
+    </div><!-- modal -->
+
+
+
+    <div class="footer">
+      <p>© «Goalkeeping Organizer», 2025</p>
+    </div>
+
+
+</div><!-- main -->
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/semantic.min.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+</html>
