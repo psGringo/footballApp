@@ -1,0 +1,100 @@
+.datepickerDark {
+    background-color: rgb(100, 100, 115) !important;
+    color: #fff;
+    border: none !important;
+    border-radius: 8px !important;
+    /*box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1) !important;*/
+    /*box-shadow: none !important; !* убираем внутреннюю тень *!*/
+    padding: 3px !important;
+}
+
+/* Верхняя шапка */
+.react-datepicker__header {
+    background-color: rgb(80, 80, 90) !important;
+    border-bottom: none !important;
+}
+
+/* Название месяца */
+.react-datepicker__current-month {
+    color: #fff !important;
+    background-color: transparent !important;
+}
+
+/* Названия дней недели */
+.react-datepicker__day-name {
+    color: #ccc !important;
+    background-color: transparent !important;
+}
+
+/* Контейнер кнопок навигации */
+.react-datepicker__navigation {
+    top: 10px !important;
+}
+
+/* ← и → */
+.react-datepicker__navigation-icon::before {
+    border-color: #fff !important;
+}
+
+/* Индивидуальные дни */
+.datepickerDarkDay {
+    color: #fff !important;
+}
+
+/* Активный день */
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+    background-color: #f2711c !important;
+    color: white !important;
+}
+
+/* Hover по дню */
+.react-datepicker__day:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.react-datepicker__month-container {
+    background-color: rgb(80, 80, 90) !important;
+    border-radius: 8px !important;
+}
+
+.react-datepicker__month {
+    background-color: rgb(80, 80, 90) !important;
+}
+
+
+.headerRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 0 12px;
+}
+
+.monthLabel {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 0.95rem;
+}
+
+.navButton {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 4px 8px;
+    transition: background 0.2s;
+}
+
+.navButton:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.flexRow {
+    display: flex;
+    align-items: center;
+}

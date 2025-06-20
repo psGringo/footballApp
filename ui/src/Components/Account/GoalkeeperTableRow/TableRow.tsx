@@ -46,7 +46,7 @@ export const TableRow: React.FC<ITableRowProps> = ({
             </div>
             <div className={`content ${isActive ? 'active' : ''}`}>
                 <div className={`ui grid transition ${isActive ? 'visible' : 'hidden'}`}>
-                    <div
+                    <div                        
                         className={`six wide mobile  five wide tablet four wide computer three wide large screen  three wide widescreen column`
                         }>
                         <div className="profile-img"><img alt="ava" src={avatar}/></div>

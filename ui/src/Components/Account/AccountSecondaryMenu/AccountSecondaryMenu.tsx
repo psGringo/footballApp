@@ -1,17 +1,50 @@
+import React from 'react';
+import {teamStore, TeamTabs} from '@/Store/teamTabStore';
+import {observer} from 'mobx-react-lite';
+
+interface TabProp {
+    active?: boolean;
+    name: string;
+    callback: () => void;
+}
+
 // eslint-disable-next-line no-undef
-export const AccountSecondaryMenu: React.FC = () => {
+const TabHeader: React.FC<TabProp> = ({active, name, callback}) => {
+
+    const onClick = () => {
+        callback();
+    };
+
     return (
-        <div className="ui secondary menu">
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid,react/no-adjacent-inline-elements */}
-            <a className="active item" data-tab="tab-11">
-                <span className="material-symbols">person</span>
-                <span className="text-off">Goalkeeper</span>
-            </a>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a className="item" data-tab="tab-12">
-                <span className="material-symbols">child_care</span>
-                <span className="text-off">Scouting</span>
-            </a>
-        </div>
+        <a className={`${active ? 'active' : null} item`} data-tab="tab-11" onClick={onClick}>
+            <span className="material-symbols">person</span>
+            <span className="text-off">{name}</span>
+        </a>
     );
 }
+
+// eslint-disable-next-line no-undef
+export const AccountSecondaryMenu: React.FC = observer(() => {
+
+    const {activeTab} = teamStore;
+
+    return (
+        <div className="ui secondary menu">
+            <TabHeader
+                active={activeTab === TeamTabs.Goalkeeper}
+                callback={() => {
+                    teamStore.setActiveTab(TeamTabs.Goalkeeper)
+                }}
+                name="Goalkeeper"
+
+            />
+            <TabHeader
+                active={activeTab === TeamTabs.Scouting}
+                callback={() => {
+                    teamStore.setActiveTab(TeamTabs.Scouting)
+                }}
+                name="Scouting"
+            />
+        </div>
+    );
+});

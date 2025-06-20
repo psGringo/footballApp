@@ -1,6 +1,6 @@
 import {observer} from 'mobx-react-lite';
 import React from 'react';
-import {AccountPage} from '@/Components/Account/AccountPage/AccountPage';
+import {TeamTab} from '@/Components/Account/AccountPage/TeamTab';
 import {Header} from '@/Components/Header/Header';
 
 
@@ -11,7 +11,7 @@ export const App: React.FC = observer(() => {
         <div className="pusher">
             <div className="main">
                 <Header/>
-                <AccountPage/>
+                <TeamTab/>
             </div>
         </div>
     )
