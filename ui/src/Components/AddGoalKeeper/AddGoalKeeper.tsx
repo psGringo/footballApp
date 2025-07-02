@@ -11,7 +11,9 @@ import {teamStore} from '@/Store/teamTabStore';
 
 export const AddGoalKeeper = () => {
 
-    const [startDate, setStartDate] = useState<Date | null>(new Date());
+    const [dateOfBirth, setDateOfBirth] = useState<Date | null>(new Date());
+    const [firstName, setFirstName] = useState<string>('');
+    const [secondName, setSecondName] = useState<string>('');
 
     const onDeleteClick = () => {
         teamStore.toggleShowAddGoalKeeper();
@@ -25,8 +27,22 @@ export const AddGoalKeeper = () => {
 
             <form className="ui form">
                 <div className="equal width fields">
-                    <InputWithLabel name="First name"/>
-                    <InputWithLabel name="Surname"/>
+                    <InputWithLabel
+                        name="First name"
+                        onChange = {(e) => {
+                            setFirstName(e.currentTarget.value)
+                        }}
+                        placeholder="First name"
+                        value = {firstName}
+                    />
+                    <InputWithLabel
+                        name="Second name"
+                        onChange = {(e) => {
+                            setSecondName(e.currentTarget.value)
+                        }}
+                        placeholder="Second name"
+                        value = {secondName}
+                    />
                     <div className="field">
                         <label>Date of birth</label>
                         <div className="ui icon input">
@@ -34,7 +50,7 @@ export const AddGoalKeeper = () => {
                                 calendarClassName={styles.datepickerDark}
                                 customInput={<CustomInput/>}
                                 dayClassName={() => styles.datepickerDarkDay}
-                                onChange={(date) => setStartDate(date)}
+                                onChange={(date) => setDateOfBirth(date)}
                                 popperClassName={styles.datepickerDark}
                                 renderCustomHeader={({date, decreaseMonth, increaseMonth}) => (
                                     <div className={styles.headerRow}>
@@ -46,7 +62,7 @@ export const AddGoalKeeper = () => {
                                         <button className={styles.navButton} onClick={increaseMonth}>→</button>
                                     </div>
                                 )}
-                                selected={startDate}
+                                selected={dateOfBirth}
                                 weekDayClassName={() => styles.datepickerDarkDay}
                                 wrapperClassName="ui calendar"
                             />
@@ -88,7 +104,10 @@ export const AddGoalKeeper = () => {
                 <div className="field">
                     <label>Start of season</label>
                     <div className={styles.flexRow}>
-                        <select className="ui fluid search dropdown" style={{flex: '0 0 180px', marginRight: '1rem'}}>
+                        <select
+                            className={styles.seasonSelect}
+                            style={{flex: '0 0 180px', marginRight: '1rem'}}
+                        >
                             <option value="0">2025/2026</option>
                             <option value="1">2024/2025</option>
                         </select>
@@ -98,7 +117,7 @@ export const AddGoalKeeper = () => {
                                 calendarClassName={styles.datepickerDark}
                                 customInput={<CustomInput/>}
                                 dayClassName={() => styles.datepickerDarkDay}
-                                onChange={(date) => setStartDate(date)}
+                                onChange={(date) => setDateOfBirth(date)}
                                 popperClassName={styles.datepickerDark}
                                 renderCustomHeader={({date, decreaseMonth, increaseMonth}) => (
                                     <div className={styles.headerRow}>
@@ -111,7 +130,7 @@ export const AddGoalKeeper = () => {
                                         <button className={styles.navButton} onClick={increaseMonth}>→</button>
                                     </div>
                                 )}
-                                selected={startDate}
+                                selected={dateOfBirth}
                                 weekDayClassName={() => styles.datepickerDarkDay}
                                 wrapperClassName="ui calendar"
                             />

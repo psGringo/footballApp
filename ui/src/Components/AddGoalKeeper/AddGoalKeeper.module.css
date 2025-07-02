@@ -98,3 +98,25 @@
     display: flex;
     align-items: center;
 }
+
+.seasonSelect {
+    background-color: rgba(255, 255, 255, .2) !important;      /* ближе к твоей цветовой схеме */
+    color: #ccc !important;                    /* белый текст */
+    border: 1px solid #5a5a6a;
+    border-radius: 4px;
+    padding: 0.67857143em 1em;
+    height: 38px;
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.seasonSelect:focus {
+    outline: none;
+    border-color: #f2711c;          /* оранжевый фокус как в Semantic UI */
+}
+
+/* для раскрытого списка */
+.seasonSelect option {
+    background-color: #3f3f4a;  /* фон опций */
+    color: #ccc;                /* текст опций */
+}

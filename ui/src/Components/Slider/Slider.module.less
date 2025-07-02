@@ -1,0 +1,89 @@
+.sliderWidget {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid red; // для отладки
+  overflow: hidden;
+  font-family: sans-serif;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .sliderSlide {
+    flex: 1;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .sliderControls {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(241, 239, 239, 0.91); // серый фон овала
+    border-radius: 40px;  // овал
+    padding: 6px 4px;    // внутренние отступы для овала
+    gap: 3px;            // расстояние между стрелками и точками
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+
+    .arrowButton {
+      background: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      padding: 0;
+      transition: color 0.2s;
+
+      .arrowIcon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .activeArrow {
+      color: #000;
+      cursor: pointer;
+
+      &:hover {
+        color: #000;
+      }
+    }
+
+    .inactiveArrow {
+      color: #ccc;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .indicatorContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      align-items: center;
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #999;
+        opacity: 0.4;
+        cursor: pointer;
+        transition: opacity 0.3s;
+
+        &.active {
+          background: #000;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
